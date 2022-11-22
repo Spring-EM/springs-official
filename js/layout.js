@@ -1,0 +1,4 @@
+<<<<<<< HEAD
+
+=======
+>>>>>>> index-carousel-feat
