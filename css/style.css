@@ -17,11 +17,11 @@ html{
 
 
 h1 {
-    font-size: calc(35px * 0.0625px);
+    font-size: 2rem;
 }
 
 h2{
-    font-size: calc(40px * 0.0625px);
+    font-size: 2.3rem;
     text-transform: capitalize;
 }
 
@@ -70,6 +70,7 @@ button{
 }
 
 .nav-items a{
+    font-size: 1.5rem;
     color: #000;
 }
 

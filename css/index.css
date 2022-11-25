@@ -26,7 +26,7 @@
 }
 
 .index-hero article{
-    height: 60%;
+    height: 50%;
     display: flex;
     flex-flow: column;
     justify-content: space-around;
@@ -41,6 +41,7 @@
 }
 
 .index-hero article p{
+    font-size: 1.5rem;
     inline-size: 400px;
     word-wrap: break-word;
 }
@@ -105,11 +106,14 @@
     align-items: center;
 }
 
+
+
 .achievements ul li .icons{
     width: 30px;
 }
 
 .achievements ul li .amount{
+    font-size: 1.5rem;
     font-weight: 700;
 }
 
@@ -139,6 +143,7 @@
 
 
 .about article p{
+    font-size: 1.5rem;
     inline-size: 400px;
     word-wrap: break-word;
     line-height: var(--line);
@@ -239,16 +244,19 @@
 }
 
 .flex-child-two article{
-    padding:30px;
+    padding: 30px;
+    transition: .2s ease-out;
 }
 
 .flex-child-two article p{
     font-size: 12px;
     line-height: var(--line-sm);
+    transition: .2s ease-in;
 }
 
 .hide{
     display: none;
+    transition: .4s ease-in
 }
 
 

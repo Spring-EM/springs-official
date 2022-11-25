@@ -26,7 +26,7 @@ let counterContainer = document.getElementById("section-counter")
 
 let counters = document.querySelectorAll(".counter-item .counter")
 
-let speed = 100
+let speed = 50
 
 
 
