@@ -10,6 +10,11 @@
     overflow-x: hidden;
 }
 
+html{
+    scroll-behavior: smooth;
+    font-size:  62.5%;
+}
+
 
 h1 {
     font-size: calc(35px * 0.0625px);

@@ -13,7 +13,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/dc9d65de73.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
     <script src="/js/script.js" defer></script>
+    <script src="/js/scroll.js" defer></script>
 </head>
 <body>
     <nav class="navigation">
@@ -27,7 +29,6 @@
                 <a href="portfolio.html">portfolio</a>
                 <a href="about.html">about us</a>
                 <a href="services.html">services</a>
-                <a href="team.html">our team</a>
                 <a href="contact.html">contact</a>
             </li>
         </ul>
@@ -58,31 +59,31 @@
             </svg>
         </div>
     </header>
-    <section class="achievements">
+    <section class="achievements" id="section-counter">
         <ul>
            
-            <li>
-                <!-- <i class="fa-solid fa-user-group a-icon"></i> -->
+            <li class="counter-item">
+                
                 <img class="icons item" src="/assets/icons/Vectorbrands.svg" alt="brands">
-                <p class="amount item">5+</p>
+                <p class="amount item counter" data-target="5">0</p>
                 <p class="title item">our brands</p>
             </li>
-            <li>
-                <!-- <i class="fa-solid fa-file-lines a-icon"></i> -->
+            <li class="counter-item">
+                
                 <img class="icons item" src="/assets/icons/Vectorfile.svg" alt="a file icon" >
-                <p class="amount item">15+</p>
+                <p class="amount item counter" data-target="15">0</p>
                 <p class="title item">completed projects</p>
             </li>
-            <li>
-                <!-- <i class="fa-solid fa-people-group a-icon"></i> -->
+            <li class="counter-item">
+                
                 <img class="icons item" src="/assets/icons/Vectorteam.svg" alt="team icon" >
-                <p class="amount item">22</p>
+                <p class="amount item counter" data-target="22">0</p>
                 <p class="title item">team members</p>
             </li>
-            <li>
-                <!-- <i class="fa-solid fa-medal a-icon"></i> -->
+            <li class="counter-item">
+                
                 <img class="icons item" src="/assets/icons/Vectormedal.svg" alt="medal icon">
-                <p class="amount item">90%</p>
+                <p class="amount item counter" data-target="90">0</p>
                 <p class="title item">success rate</p>
             </li>
             
