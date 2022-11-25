@@ -56,8 +56,3 @@ let counterObserver = new IntersectionObserver((entries, observer) => {
 })
 
 counterObserver.observe(counterContainer)
-
-// gsap.to(counterContainer, {
-//     scrollTrigger: counterContainer,
-//     x: 120
-// })
