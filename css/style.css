@@ -10,13 +10,18 @@
     overflow-x: hidden;
 }
 
+html{
+    scroll-behavior: smooth;
+    font-size:  62.5%;
+}
+
 
 h1 {
-    font-size: calc(35px * 0.0625px);
+    font-size: 2rem;
 }
 
 h2{
-    font-size: calc(40px * 0.0625px);
+    font-size: 2.3rem;
     text-transform: capitalize;
 }
 
@@ -65,18 +70,21 @@ button{
 }
 
 .nav-items a{
+    font-size: 1.5rem;
     color: #000;
 }
 
 .pill{
     width: 100px;
-    height: 20px;
+    height: 23px;
     font-size: 10px;
     background-color: var(--azul-deep);
     border-radius: 30px;
-    text-align: center;
     color: var(--azul-deep-nopac);
-    padding-top: 5px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 

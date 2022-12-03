@@ -1,41 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Springs | Home</title>
+    <link rel="icon" href="/assets/images/springs-logo.png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/carousel.css" >
+    <link rel="stylesheet" href="css/flickity.css" media="screen">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/dc9d65de73.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" defer></script>
-    <script src="/js/script.js" defer></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" defer></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script> -->
+    <script src="./js/gsap/gsap.min.js" defer></script>
+    <script src="./js/gsap/scrollTrigger.min.js" defer></script>
+    <script src="./js/script.js" defer></script>
+    <script src="./js/scroll.js" defer></script>
 </head>
+
 <body>
     <nav class="navigation">
         <ul>
             <li class="logo">
-                <a href="index.html" >
-                    <img src="/assets/images/springs-logo.png" alt="logo" >
+                <a href="index.html">
+                    <img src="/assets/images/springs-logo.png" alt="logo">
                 </a>
             </li>
             <li class="nav-items">
                 <a href="portfolio.html">portfolio</a>
                 <a href="about.html">about us</a>
                 <a href="services.html">services</a>
-                <a href="team.html">our team</a>
                 <a href="contact.html">contact</a>
             </li>
         </ul>
     </nav>
     <header class="hero index-hero">
-    <svg view-box="0 0 300 600" id="blue-accent">
-        <rect x="0" y="0" width="500" height= "700" />
-    </svg>
+        <div id="blue-accent"></div>
         <article>
             <h1>
                 Let create a memorable and
@@ -49,61 +53,72 @@
             </p>
             <button>
                 learn more
-                <i class="fa-solid fa-arrow-right-long fa-rotate-by" style="--fa-rotate-angle: -55deg; margin-left: 10px;" ></i>
+                <i class="fa-solid fa-arrow-right-long fa-rotate-by"
+                    style="--fa-rotate-angle: -55deg; margin-left: 10px;"></i>
             </button>
         </article>
-        <div class="img-hero-wrapper" >
-            <svg viewBox="0 0 300 500" width="300" height="400">
-                <image href="./assets/images/hero.png" x="-150" y="-20" preserveAspectRatio=none></image>
-            </svg>
+        <div aria-label="frosted glass accent" class="frosted-glass-container">
+            <div class="frosted-glass frosted-glass-one"></div>
+            <div class="frosted-glass frosted-glass-two"></div>
         </div>
+        <img class="index-hero-image" src="./assets/images/hero.png" alt="A woman smiling" />
+        <svg width="0" height="0">
+            <defs>
+                <clipPath id="indexHeroImageClip">
+                    <rect x="100" y="0" rx="10" ry="10" width="250" height="400" />
+                </clipPath>
+            </defs>
+        </svg>
+
+        <div class="index-hero-image-accent"></div>
     </header>
-    <section class="achievements">
+    <section class="achievements" id="section-counter">
         <ul>
-           
-            <li>
-                <!-- <i class="fa-solid fa-user-group a-icon"></i> -->
+
+            <li class="counter-item">
                 <img class="icons item" src="/assets/icons/Vectorbrands.svg" alt="brands">
-                <p class="amount item">5+</p>
+                <p class="amount item counter" data-target="5">0</p>
                 <p class="title item">our brands</p>
             </li>
-            <li>
-                <!-- <i class="fa-solid fa-file-lines a-icon"></i> -->
-                <img class="icons item" src="/assets/icons/Vectorfile.svg" alt="a file icon" >
-                <p class="amount item">15+</p>
+            <li class="counter-item">
+
+                <img class="icons item" src="/assets/icons/Vectorfile.svg" alt="a file icon">
+                <p class="amount item counter" data-target="15">0</p>
                 <p class="title item">completed projects</p>
             </li>
-            <li>
-                <!-- <i class="fa-solid fa-people-group a-icon"></i> -->
-                <img class="icons item" src="/assets/icons/Vectorteam.svg" alt="team icon" >
-                <p class="amount item">22</p>
+            <li class="counter-item">
+
+                <img class="icons item" src="/assets/icons/Vectorteam.svg" alt="team icon">
+                <p class="amount item counter" data-target="22">0</p>
                 <p class="title item">team members</p>
             </li>
-            <li>
-                <!-- <i class="fa-solid fa-medal a-icon"></i> -->
+            <li class="counter-item">
+
                 <img class="icons item" src="/assets/icons/Vectormedal.svg" alt="medal icon">
-                <p class="amount item">90%</p>
+                <p class="amount item counter" data-target="90">0</p>
                 <p class="title item">success rate</p>
             </li>
-            
+
         </ul>
     </section>
     <section class="about">
         <svg viewBox="0 0 450 500" class="about-img" preserveAspectRatio=none>
-        <image href="/assets/images/aboutimage.png">
-    </svg>
+            <image href="/assets/images/aboutimage.png">
+        </svg>
         <article>
             <div class="pill"> About springs-em</div>
             <h2>Your trusted partner</h2>
-            <p>We are an experiential marketing & promotions company with a clear focus on growing brand volumes through the
+            <p>We are an experiential marketing & promotions company with a clear focus on growing brand volumes through
+                the
                 delivery of exciting and impactful brand experiences which trigger purchases and expands the bottom line
-                We build bridges which connects brands to defined targets and results in meaningful, memorable and mutually
+                We build bridges which connects brands to defined targets and results in meaningful, memorable and
+                mutually
                 rewarding life-long relationships.
             </p>
             <button>learn more about us <i class="fa-solid fa-chevron-right"></i></button>
         </article>
     </section>
-    
+
     <section class="service-details">
         <article class="flex-child-one">
             <h2>services details</h2>
@@ -122,63 +137,107 @@
         </article>
         <article class="flex-child-two">
             <article class="card-two" data-content="">
-                <p class="">
-                    Technology and social media has made it easier for companies to market to their consumer in some ways. However, these
+                <article class="">
+                    <h2>Experiential Marketing Pro!</h2>
+                    Technology and social media has made it easier for companies to market to their consumer in some
+                    ways. However, these
                     marketing tactics lack the connection and interaction that makes a lasting impression on a consumer.
-                    Think about how many advertisements you see when surfing the Internet, billboards when you are driving, and commercials
-                    when you are watching television. How many of those advertisements could you recall right now? Chances are you probably
+                    Think about how many advertisements you see when surfing the Internet, billboards when you are
+                    driving, and commercials
+                    when you are watching television. How many of those advertisements could you recall right now?
+                    Chances are you probably
                     cannot recall very many due to the amount of advertisements and lack of interaction.
-                    We engage our clients' consumers and creates real-life experience that will be remembered. We focus on getting the
+                    We engage our clients' consumers and creates real-life experience that will be remembered. We focus
+                    on getting the
                     consumer to experience our client's brand.
-                </p>
-                <p class="hide">
-                    Use lap as chair. In the middle of the night i crawl onto your chest and purr gently to help you sleep chew master's
-                    slippers for adventure always make plans to dominate world and then take a nap. Miaow then turn around
-                    and show you my bum steal mom's crouton while she is in the bathroom and cuddle no cuddle cuddle love scratch scratch
-                    but i could pee on this if i had the energy but sees bird in air, breaks into cage and attacks creature. Run as fast as
-                    i can into another room for no reason make plans to dominate world and then take a nap hiss and stare at nothing then
-                    run suddenly away, lick plastic bags poop in the plant pot but cats making all the muffins. Pee in the shoe time to go
-                    zooooom or fight own tail find something else more interesting. Kitty kitty pussy cat doll reaches under door into
-                    adjacent room. Let me in let me out let me in let me out let me in let me out who broke this door anyway sleep. Run up
+                </article>
+                <article class="hide">
+                    <h2>Digital Marketing</h2>
+                    Use lap as chair. In the middle of the night i crawl onto your chest and purr gently to help you
+                    sleep chew master's
+                    slippers for adventure always make plans to dominate world and then take a nap. Miaow then turn
+                    around
+                    and show you my bum steal mom's crouton while she is in the bathroom and cuddle no cuddle cuddle
+                    love scratch scratch
+                    but i could pee on this if i had the energy but sees bird in air, breaks into cage and attacks
+                    creature. Run as fast as
+                    i can into another room for no reason make plans to dominate world and then take a nap hiss and
+                    stare at nothing then
+                    run suddenly away, lick plastic bags poop in the plant pot but cats making all the muffins. Pee in
+                    the shoe time to go
+                    zooooom or fight own tail find something else more interesting. Kitty kitty pussy cat doll reaches
+                    under door into
+                    adjacent room. Let me in let me out let me in let me out let me in let me out who broke this door
+                    anyway sleep. Run up
                     and down stairs bawl under human beds.
-                </p>
-                <p class="hide">
-                    Sleeps on my head intently sniff hand. Scratch at door to be let outside, get let out then scratch at door immmediately
-                    after to be let back in ooooh feather moving feather! yet hiding behind the couch until lured out by a feathery toy claw
-                    at curtains stretch and yawn nibble on tuna ignore human bite human hand yet sleep in the bathroom sink but scream for
-                    no reason at 4 am for leave fur on owners clothes. Poop in a handbag look delicious and drink the soapy mopping up water
-                    then puke giant foamy fur-balls jump around on couch, meow constantly until given food, so taco cat backwards spells
-                    taco cat, but chew on cable or being gorgeous with belly side up for howl uncontrollably for no reason
-                </p>
-                <p class="hide">
-                    Pushed the mug off the table poop on grasses, but toilet paper attack claws fluff everywhere meow miao french ciao
-                    litterbox mess up all the toilet paper or cat fur is the new black or i'm bored inside, let me out i'm lonely outside,
-                    let me in i can't make up my mind whether to go in or out, guess i'll just stand partway in and partway out,
-                    contemplating the universe for half an hour how dare you nudge me with your foot?!?! leap into the air in greatest
-                    offense!. Licks paws i could pee on this if i had the energy scratch so owner bleeds, scream for no reason at 4 am.
-                    Sugar, my siamese, stalks me (in a good way), day and night i like cats because they are fat and fluffy.
-                </p>
-                <p class="hide">
-                    Thinking longingly about tuna brine lick arm hair yet cat playing a fiddle in hey diddle diddle? the cat was chasing the
-                    mouse so where is it? i saw that bird i need to bring it home to mommy squirrel! . Cat ass trophy. Try to hold own back
-                    foot to clean it but foot reflexively kicks you in face, go into a rage and bite own foot, hard spot something, big
-                    eyes, big eyes, crouch, shake butt, prepare to pounce for chew the plant i like frogs and 0 gravity, hide head under
-                    blanket so no one can see paw at your fat belly. Purr while eating. I love cats i am one wake up scratch humans leg for
-                    food then purr then i have a and relax hide head under blanket so no one can see for meow for food, then when human
-                    fills food dish, take a few bites of food and continue meowing so jump up to edge of bath, fall in then scramble in a
+                </article>
+                <article class="hide">
+                    <h2>SmartBox/Shared Office</h2>
+                    Sleeps on my head intently sniff hand. Scratch at door to be let outside, get let out then scratch
+                    at door immmediately
+                    after to be let back in ooooh feather moving feather! yet hiding behind the couch until lured out by
+                    a feathery toy claw
+                    at curtains stretch and yawn nibble on tuna ignore human bite human hand yet sleep in the bathroom
+                    sink but scream for
+                    no reason at 4 am for leave fur on owners clothes. Poop in a handbag look delicious and drink the
+                    soapy mopping up water
+                    then puke giant foamy fur-balls jump around on couch, meow constantly until given food, so taco cat
+                    backwards spells
+                    taco cat, but chew on cable or being gorgeous with belly side up for howl uncontrollably for no
+                    reason
+                </article>
+                <article class="hide">
+                    <h2>Springs Logistics</h2>
+                    Pushed the mug off the table poop on grasses, but toilet paper attack claws fluff everywhere meow
+                    miao french ciao
+                    litterbox mess up all the toilet paper or cat fur is the new black or i'm bored inside, let me out
+                    i'm lonely outside,
+                    let me in i can't make up my mind whether to go in or out, guess i'll just stand partway in and
+                    partway out,
+                    contemplating the universe for half an hour how dare you nudge me with your foot?!?! leap into the
+                    air in greatest
+                    offense!. Licks paws i could pee on this if i had the energy scratch so owner bleeds, scream for no
+                    reason at 4 am.
+                    Sugar, my siamese, stalks me (in a good way), day and night i like cats because they are fat and
+                    fluffy.
+                </article>
+                <article class="hide">
+                    <h2> Springs Event</h2>
+                    Thinking longingly about tuna brine lick arm hair yet cat playing a fiddle in hey diddle diddle? the
+                    cat was chasing the
+                    mouse so where is it? i saw that bird i need to bring it home to mommy squirrel! . Cat ass trophy.
+                    Try to hold own back
+                    foot to clean it but foot reflexively kicks you in face, go into a rage and bite own foot, hard spot
+                    something, big
+                    eyes, big eyes, crouch, shake butt, prepare to pounce for chew the plant i like frogs and 0 gravity,
+                    hide head under
+                    blanket so no one can see paw at your fat belly. Purr while eating. I love cats i am one wake up
+                    scratch humans leg for
+                    food then purr then i have a and relax hide head under blanket so no one can see for meow for food,
+                    then when human
+                    fills food dish, take a few bites of food and continue meowing so jump up to edge of bath, fall in
+                    then scramble in a
                     mad panic to get out.
-                </p>
-                <p class="hide">
-                    Thinking longingly about tuna brine lick arm hair yet cat playing a fiddle in hey diddle diddle? the cat was chasing the
-                    mouse so where is it? i saw that bird i need to bring it home to mommy squirrel! . Cat ass trophy. Try to hold own back
-                    foot to clean it but foot reflexively kicks you in face, go into a rage and bite own foot, hard spot something, big
-                    eyes, big eyes, crouch, shake butt, prepare to pounce for chew the plant i like frogs and 0 gravity, hide head under
-                    blanket so no one can see paw at your fat belly. Purr while eating. I love cats i am one wake up scratch humans leg for
-                    food then purr then i have a and relax hide head under blanket so no one can see for meow for food, then when human
-                    fills food dish, take a few bites of food and continue meowing so jump up to edge of bath, fall in then scramble in a
+                </article>
+                <article class="hide">
+                    <h2>SEO</h2>
+                    Thinking longingly about tuna brine lick arm hair yet cat playing a fiddle in hey diddle diddle? the
+                    cat was chasing the
+                    mouse so where is it? i saw that bird i need to bring it home to mommy squirrel! . Cat ass trophy.
+                    Try to hold own back
+                    foot to clean it but foot reflexively kicks you in face, go into a rage and bite own foot, hard spot
+                    something, big
+                    eyes, big eyes, crouch, shake butt, prepare to pounce for chew the plant i like frogs and 0 gravity,
+                    hide head under
+                    blanket so no one can see paw at your fat belly. Purr while eating. I love cats i am one wake up
+                    scratch humans leg for
+                    food then purr then i have a and relax hide head under blanket so no one can see for meow for food,
+                    then when human
+                    fills food dish, take a few bites of food and continue meowing so jump up to edge of bath, fall in
+                    then scramble in a
                     mad panic to get out.
-                </p>
-                   
+                </article>
+
             </article>
         </article>
     </section>
@@ -195,13 +254,14 @@
                 </dd>
                 <dt>effective team work</dt>
                 <dd>
-                    We help our Clients to connect, engage as well as maintain cordial relationships with their Consumers
+                    We help our Clients to connect, engage as well as maintain cordial relationships with their
+                    Consumers
                 </dd>
-                <dt>we grow businesses</dt>           
+                <dt>we grow businesses</dt>
                 <dd>
                     We trust in innovation and unique ideas that brings outstanding solutions
                 </dd>
-                
+
             </dl>
         </article>
         <article class="card-azul">
@@ -220,7 +280,7 @@
                 </dd>
                 <dd>
                     <p id="pop">Production & deployment of mechandising
-                    material (P.O.S/P.O.P)</p>
+                        material (P.O.S/P.O.P)</p>
                     <p>69%</p>
                 </dd>
                 <dd>
@@ -234,138 +294,87 @@
             </dl>
         </article>
     </section>
-    <section class="testimonials">
-        <div class="pill">testimonials</div>
-        <article>
-            <h2>our work speaks</h2>
-            <p>listen to what our clients have to say about the services we render</p>
-            <section class="carousel-wrapper">
-                <nav class="carousel-nav">
-                    <i class="fa-solid fa-arrow-left-long fa-xl" data-previous></i>
-                    <i class="fa-solid fa-arrow-right-long fa-xl" data-next></i>
-                </nav>
-                    <div class="carousel">
-                        <img src="/assets/images/mansmiling.jpg" alt="a man smiling" >
-                        <blockquote>
-                            <i class="fa-solid fa-quote-left fa-2xl"></i>
-                            <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                    </blockquote>
-                    <cite> 
-                            <p>Olive lane</p>
-                        </cite>
-                    </div>
-                    <div class="carousel">
-                        <img src="/assets/images/womaninredsmiling.jpg" alt="a man smiling" >
-                    <article>
-                        <i class="fa-solid fa-quote-left fa-2xl"></i>
-                        <blockquote>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                            magna
-                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                            consequat. Duis
-                            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </blockquote>
-                        <cite> 
-                            <p>Olive lane</p>
-                        </cite>
-                    </article>
-                    </div>
-                    <div class="carousel">
-                        <img src="/assets/images/womaninbluesmiling.jpg" alt="a man smiling" >
-                    <article>
-                        <i class="fa-solid fa-quote-left fa-2xl quote"></i>
-                        <blockquote>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                            magna
-                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                            consequat. Duis
-                            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </blockquote>
-                        <cite>
-                            <p>Olive Lane</p>
-                        </cite>
-                    </article>
-                    </div>
-            </section>
-        </article>
-    </section>
-        <nav class="clients-nav">
-            <ul>
-                <li>
-                    <img src="/assets/images/brand-1.png" alt="" >
-                </li>
-                <li>
-                    <img src="/assets/images/brand-2.png" alt="" >
-                </li>
-                <li>
-                    <img src="/assets/images/brand-3.png" alt="" >
-                </li>
-                <li>
-                    <img src="/assets/images/brand-4.png" alt="" >
-                </li>
-            </ul>
-        </nav>
-        <footer class="footer" id="footer">
-            <img src="./assets/images/springs-logo.png" alt="" >
-            <nav class="footer-nav">
-                <dl>
-                    <dt>Services</dt>
-                    <dd>Experiential Marketing</dd>
-                    <dd>Digital Marketing</dd>
-                    <dd>Smart Box/ Shared Office</dd>
-                    <dd>Springs Logistics</dd>
-                    <dd>Springs Events</dd>
-                    <dd>SEO</dd>
-                </dl>
-                <dl>
-                    <dt>Company</dt>
-                    <dd>about</dd>
-                    <dd>team</dd>
-                    <dd>portfolio</dd>
-                </dl>
-                <dl>
-                    <dt>legal</dt>
-                    <dd>terms</dd>
-                    <dd>security</dd>
-                    <dd>privacy</dd>
-                </dl>
-            </nav>
+    <section class="testimonial">
+        <div class="pill">Testimonials</div>
 
-            <ul class="contact-details">
-                <li id="social">
-                    <a href="#">
-                        <i class="fa-brands fa-facebook-f"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fa-brands fa-twitter"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fa-brands fa-youtube"></i>
-                    </a>
-                </li>
-                <li id="address">
-                    <p>
-                        1st Floor, Right Wing Eyis Global Investment
-                        Complex, Beside FIRS Office Sabo Lugbe, Opposite
-                        Dunamis Glory Dome, Airport Road, FCT Abuja
-                    </p>
-                </li>
-                <li id="email">
-                    <a href="mailto:contact@springs-em.com">contact@springs-em.com</a>
-                </li>
-                <li id="number"> <a href="Tel:+2348099600469">+234 809 960 0469</a></li>
-            </ul>
-            <p id="copyright"> Copyright &copy; <time id="year"></time> All Rights Reserved.</p>
+        <h2> our work speaks</h2>
+        <p>listen to what our clients have to say about the services we render</p>
+    </section>
+    
+    </section>
+    <nav class="clients-nav">
+        <ul>
+            <li>
+                <img src="/assets/images/brand-1.png" alt="">
+            </li>
+            <li>
+                <img src="/assets/images/brand-2.png" alt="">
+            </li>
+            <li>
+                <img src="/assets/images/brand-3.png" alt="">
+            </li>
+            <li>
+                <img src="/assets/images/brand-4.png" alt="">
+            </li>
+        </ul>
+    </nav>
+    <footer class="footer" id="footer">
+        <img src="./assets/images/springs-logo.png" alt="">
+        <nav class="footer-nav">
+            <dl>
+                <dt>Services</dt>
+                <dd>Experiential Marketing</dd>
+                <dd>Digital Marketing</dd>
+                <dd>Smart Box/ Shared Office</dd>
+                <dd>Springs Logistics</dd>
+                <dd>Springs Events</dd>
+                <dd>SEO</dd>
+            </dl>
+            <dl>
+                <dt>Company</dt>
+                <dd>about</dd>
+                <dd>team</dd>
+                <dd>portfolio</dd>
+            </dl>
+            <dl>
+                <dt>legal</dt>
+                <dd>terms</dd>
+                <dd>security</dd>
+                <dd>privacy</dd>
+            </dl>
+        </nav>
+
+        <ul class="contact-details">
+            <li id="social">
+                <a href="#">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </li>
+            <li id="address">
+                <p>
+                    1st Floor, Right Wing Eyis Global Investment
+                    Complex, Beside FIRS Office Sabo Lugbe, Opposite
+                    Dunamis Glory Dome, Airport Road, FCT Abuja
+                </p>
+            </li>
+            <li id="email">
+                <a href="mailto:contact@springs-em.com">contact@springs-em.com</a>
+            </li>
+            <li id="number"> <a href="Tel:+2348099600469">+234 809 960 0469</a></li>
+        </ul>
+        <p id="copyright"> Copyright &copy; <time id="year"></time> All Rights Reserved.</p>
     </footer>
+
+    <script src="./js/flickity.pkgd.min.js"></script>
 </body>
+
 </html>

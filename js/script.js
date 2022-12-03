@@ -3,7 +3,7 @@
 // nav content switcher
 
 const contentNav = document.querySelectorAll(".card-one li")
-const content = document.querySelectorAll(".card-two p")
+const content = document.querySelectorAll(".card-two article")
 
 const currentYear = document.getElementById("year")
 //vars

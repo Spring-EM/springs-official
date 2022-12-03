@@ -1,51 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Springs | Services</title>
+    <link rel="icon" href="/assets/images/springs-logo.png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/carousel.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/dc9d65de73.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" defer></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" defer></script> -->
+    <script src="./js/gsap/gsap.min.js" defer></script>
 </head>
+
 <body>
     <nav class="navigation">
-    <ul>
-        <li class="logo">
-            <a href="index.html">
-                <img src="/assets/images/springs-logo.png" alt="logo" />
-            </a>
-        </li>
-        <li class="nav-items">
-            <a href="portfolio.html">portfolio</a>
-            <a href="about.html">about us</a>
-            <a href="services.html">services</a>
-            <a href="team.html">our team</a>
-            <a href="contact.html">contact</a>
-        </li>
-    </ul>
-    </nav>  
-    <header class="services-hero" >
+        <ul>
+            <li class="logo">
+                <a href="index.html">
+                    <img src="/assets/images/springs-logo.png" alt="logo" />
+                </a>
+            </li>
+            <li class="nav-items">
+                <a href="portfolio.html">portfolio</a>
+                <a href="about.html">about us</a>
+                <a href="services.html">services</a>
+                <a href="contact.html">contact</a>
+            </li>
+        </ul>
+    </nav>
+    <header class="services-hero">
         <article>
             <div class="pill">Our Services</div>
             <h2>things we do</h2>
-            <p>we are an experiential marketing & promotions company with a clear focus on growing brand volumnes through the
-                delivery of exciting and impactful brand experiences which trigger purchases and expand the bottom line. we build
-                bridges which connect brands to defined targets and results in meaningful, memorable, and mutually rewarding
+            <p>we are an experiential marketing & promotions company with a clear focus on growing brand volumnes
+                through the
+                delivery of exciting and impactful brand experiences which trigger purchases and expand the bottom line.
+                we build
+                bridges which connect brands to defined targets and results in meaningful, memorable, and mutually
+                rewarding
                 life-long relatioships. </p>
         </article>
         <section class="services-grid">
-            <div class"sg-item-one"></div>
+            <div class="sg-item-one"></div>
             <div class="sg-item-two"></div>
             <div class="sg-item-three"></div>
         </section>
     </header>
+    <main id="services-body-content">
+        <div class="pill">list of our services</div>
+        <section id="services-list">
+            <div class="services-list-item">
+                <div>
+                    <img src="./assets/icons/EM Icon.svg" alt="speaker" >
+                </div>
+                <p>Experiential Marketing</p>
+            </div>
+            <div class="services-list-item">
+                <div>
+                    <img src="./assets/icons/DM Icon.svg" alt="speaker">
+                </div>
+                    <p>Digital Marketing</p>
+            </div>
+            <div class="services-list-item">
+                <div>
+                    <img src="./assets/icons/SO Icon.svg" alt="speaker">
+                </div>
+                    <p>SmartBox/Shared Office</p>
+            </div>
+            <div class="services-list-item">
+                <div>
+                    <img src="./assets/icons/SL Icon.svg" alt="speaker">
+                </div>
+                    <p>Springs Logistics</p>
+            </div>
+            <div class="services-list-item">
+                <div>
+                    <img src="./assets/icons/SE Icon.svg" alt="speaker">
+                </div>
+                    <p>Springs Event</p>
+            </div>
+            <div class="services-list-item">
+                <div>
+                    <img src="./assets/icons/SEO icon.svg" alt="speaker">
+                </div>
+                    <P>SEO</P>
+            </div>
+        </section>
+        <section id="services-connect">
+            <div class="pill">connect with us</div>
+            <p>To get any of our services, you can reach out to us on our social media platforms.</p>
+            <nav>
+                <a href="" class="services-social-links"><img src="./assets/icons/facebook icon.svg" alt="facebook icon"><p>Facebook</p></a>
+                <a href="" class="services-social-links"> <img src="./assets/icons/youtube.svg" alt="facebook icon"><p>Youtube</p></a>
+                <a href="" class="services-social-links"><img src="./assets/icons/twitter.svg" alt="facebook icon"><p>Twitter</p></a>
+                <a href="" class="services-social-links"><img src="./assets/icons/instagram icon.svg" alt="facebook icon"><p>Instagram</p></a>
+            </nav>
+            <p id="services-call">Or Call <a href="tel+234 809 960 0409">+234 809 960 0409</a></p>
+        </section>
+    </main>
     <nav class="clients-nav">
         <ul>
             <li>
@@ -87,7 +144,7 @@
                 <dd>privacy</dd>
             </dl>
         </nav>
-    
+
         <ul class="contact-details">
             <li id="social">
                 <a href="#">
@@ -118,4 +175,5 @@
         <p id="copyright"> Copyright &copy; <time id="year"></time> All Rights Reserved.</p>
     </footer>
 </body>
+
 </html>
