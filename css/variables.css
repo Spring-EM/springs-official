@@ -13,4 +13,5 @@
     --glass: hsla(0, 0%, 100%, 0.8);
     --line: 31px;
     --line-sm: 15px;
+    --mobile: 600px;
 }
