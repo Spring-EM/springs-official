@@ -290,10 +290,19 @@
     transition: .2s ease-out;
 }
 
-.flex-child-two article article{
-    font-size: 12px;
-    line-height: var(--line-sm);
-    transition: .2s ease-in;
+.flex-child-two article article h2{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+
+
+.flex-child-two article article p{
+        font-size: 12px;
+        line-height: var(--line-sm);
+        inline-size: 300px;
+        word-wrap: break-word;
+        transition: .2s ease-in;
 }
 
 .hide{
@@ -928,6 +937,3 @@
 /* -----media queries ---- */
 
 
-@media only screen(max-width: var(--mobile)){
-
-}
