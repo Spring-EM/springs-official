@@ -17,7 +17,8 @@ html{
 
 
 h1 {
-    font-size: 2rem;
+    font-size: 3rem;
+    line-height: calc(var(--line) + 8px);
 }
 
 h2{
@@ -72,6 +73,13 @@ button{
 .nav-items a{
     font-size: 1.5rem;
     color: #000;
+    text-transform: capitalize;
+    transition: all .15s ease-out .4s;
+}
+
+.nav-items a:hover{
+    color: var(--azul-deep-nopac);
+    font-weight: 600;
 }
 
 .pill{
