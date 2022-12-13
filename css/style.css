@@ -74,18 +74,17 @@ button{
     font-size: 1.5rem;
     color: #000;
     text-transform: capitalize;
-    transition: all .15s ease-out .4s;
+    transition: color .1s ease-out .4s;
 }
 
 .nav-items a:hover{
-    color: var(--azul-deep-nopac);
-    font-weight: 600;
+    color: var(--rouge-full);
 }
 
 .pill{
-    width: 100px;
-    height: 23px;
-    font-size: 10px;
+    width: 140px;
+    height: 25px;
+    font-size: 12px;
     background-color: var(--azul-deep);
     border-radius: 30px;
     color: var(--azul-deep-nopac);
@@ -93,6 +92,7 @@ button{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-transform: capitalize;
 }
 
 

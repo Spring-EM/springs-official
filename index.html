@@ -9,7 +9,7 @@
     <link rel="icon" href="/assets/images/springs-logo.png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/flickity.css" media="screen">
+    <link rel="stylesheet" href="css/carousel.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
@@ -20,6 +20,7 @@
     <script src="./js/gsap/scrollTrigger.min.js" defer></script>
     <script src="./js/script.js" defer></script>
     <script src="./js/scroll.js" defer></script>
+    <script src="./js/carousel.js" defer></script>
 </head>
 
 <body>
@@ -290,52 +291,107 @@
             </dl>
         </article>
     </section>
-    <section class="testimonial">
+    <section class="testimonial testimonial__container">
+        <article class="testimonial__item testimonial__item-one">
         <div class="pill">Testimonials</div>
 
         <h2> our work speaks</h2>
         <p>listen to what our clients have to say about the services we render</p>
-        <div class="carousel-container" data-flickity="{wrapAround: true}">
+        </article>
+        <div class="carousel-container  testimonial__item testimonial__item-two">
             <div class="carousel-cell">
-                <img src="/assets/images/womaninredsmiling.jpg" alt="a woman in red similng" >
+                <img id="carousel__img-one" src="/assets/images/womaninredsmiling.jpg" alt="a woman in red similng" >
                 <svg width="0" height="0">
                     <defs>
-                        <clipPath id="carousel-cell-img">
-                            <rect x="100" y="0" width="250" height="400" ></rect>
+                        <clipPath id="carouselCellImgOne">
+                            <rect x="130" y="0" width="350" height="400" />
                         </clipPath>
-                    </defs>
+                    </defs>      
                 </svg>
+                <blockquote>
+                    <p>
+                        lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                        mollit anim id est laborum.
+                    </p>
+                    <cite>
+                        Olive lane
+                    </cite>
+                </blockquote>
             </div>
             <div class="carousel-cell">
-                    <img src="/assets/images/womaninredsmiling.jpg" alt="a woman in red similng">
+                    <img id="carousel__img-two" src="/assets/images/womaninredsmiling.jpg" alt="a woman in red similng">
                     <svg width="0" height="0">
                         <defs>
-                            <clipPath id="carousel-cell-img">
-                                <rect x="100" y="0" width="250" height="400"></rect>
+                            <clipPath id="carouselCellImgTwo">
+                                <rect x="130" y="0" width="350" height="400" />
                             </clipPath>
                         </defs>
                     </svg>
+                    <blockquote>
+                        <p>
+                            lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                            mollit anim id est laborum.
+                        </p>
+                        <cite>
+                            Olive lane
+                        </cite>
+                    </blockquote>
             </div>
             <div class="carousel-cell">
-                <img src="/assets/images/womaninredsmiling.jpg" alt="a woman in red similng">
+                <img id="carousel__img-three" src="/assets/images/womaninredsmiling.jpg" alt="a woman in red similng">
                 <svg width="0" height="0">
                     <defs>
-                        <clipPath id="carousel-cell-img">
-                            <rect x="100" y="0" width="250" height="400"></rect>
+                        <clipPath id="carouselCellImgThree">
+                            <rect x="130" y="0" width="350" height="400" />
                         </clipPath>
                     </defs>
                 </svg>
+                <blockquote>
+                        <p>
+                            lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                            mollit anim id est laborum.
+                        </p>
+                        <cite>
+                            Olive lane
+                        </cite>
+                    </blockquote>
             </div>
             <div class="carousel-cell">
-                <img src="/assets/images/womaninredsmiling.jpg" alt="a woman in red similng">
+                <img id="carousel__img-four" src="/assets/images/womaninredsmiling.jpg" alt="a woman in red similng">
                 <svg width="0" height="0">
                     <defs>
-                        <clipPath id="carousel-cell-img">
-                            <rect x="100" y="0" width="250" height="400"></rect>
+                        <clipPath id="carouselCellImgFour">
+                            <rect x="130" y="0" width="350" height="400" />
                         </clipPath>
                     </defs>
                 </svg>
+                <blockquote>
+                    <p>
+                        lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                        mollit anim id est laborum.
+                    </p>
+                    <cite>
+                        Olive lane
+                    </cite>
+                </blockquote>
             </div>
+            
         </div>
     </section>
     
@@ -412,7 +468,6 @@
         <p id="copyright"> Copyright &copy; <time id="year"></time> All Rights Reserved.</p>
     </footer>
 
-    <script src="./js/flickity.pkgd.min.js"></script>
 </body>
 
 </html>
