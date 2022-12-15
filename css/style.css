@@ -147,7 +147,18 @@ button{
 }
 
 .footer-nav dl dd{
-    font-size: 12px;
+    font-size: 13.5px;
+    text-transform: capitalize;
+}
+
+.footer-nav dl dd a{
+    color: #000;
+    text-transform: capitalize;
+    transition: color .1s ease-out .5s;
+}
+
+.footer-nav dl dd a:hover{
+    color: var(--azul-deep-nopac);
 }
 
 .footer .contact-details{
@@ -168,6 +179,10 @@ button{
     margin-left: 10px;
 }
 
+.footer .contact-details #address p{
+    line-height: var(--line)
+}
+
 .footer .contact-details li p{
     font-size: 13px;
     inline-size: 300px;
@@ -176,10 +191,11 @@ button{
 }
 
 .footer .contact-details li a{
-    font-size: 13px;
+    font-size: 14px;
     inline-size: 300px;
     word-wrap: break-word;
     text-align: right;
+    line-height: calc(var(--line-sm) + 20px);
     color: #000;
 }
 

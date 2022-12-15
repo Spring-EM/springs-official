@@ -19,7 +19,7 @@
 }
 
 .testimonial__item-one p{
-    font-size: 15px;
+    font-size: 18px;
     text-transform: capitalize;
 }
 
@@ -38,25 +38,38 @@
 .carousel-container .carousel-cell{
     position: absolute;
     top: 0;
-    width: 80%;
-    height: 100%;
+    width: 75%;
+    height: 70%;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-color: var(--rouge-slider);
+}
+
+.carousel-container .carousel-cell blockquote{
+    position: relative;
+    left: -50px;
 }
 
 .carousel-container .carousel-cell blockquote p{
-    font-size: 13.3px;
-    font-weight: 300 !important;
-    color: #666;
+    font-size: 13px;
+    font-weight: 300;
     inline-size: 500px;
     word-wrap: break-word;
     line-height: calc(var(--line-sm) + 10px);
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.carousel-container .carousel-cell blockquote cite{
+    font-size: 20px;
+    font-weight: 600;
 }
 
 .carousel-container .carousel-cell img{
     width: 500px;
     position: relative;
+    left: -13rem;
 }
 
 .carousel-container .carousel-cell #carousel__img-one{
