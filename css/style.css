@@ -205,5 +205,10 @@ button{
     top: 90%;
     left: 40%;
 }
-/* ---------------- *
+/* ---------------- */
 
+@media screen and (max-width: 600){
+    .navigation{
+        display: none !important;
+    }
+}

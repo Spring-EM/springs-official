@@ -3,6 +3,7 @@
 
 
 
+
 .index-hero{
     width: 100vw;
     height: 100vh;
@@ -114,7 +115,13 @@
     filter: blur(60px);
 }
 
+.mobile-nav{
+    display: none;
+}
 
+.hamburger{
+    display: none;
+}
 
 
 .achievements{
@@ -947,42 +954,12 @@
     background-color: var(--rouge-surface);
 }
 
-
-/* -----media queries ---- */
-/* ---------- mobile media queries ------- */
-
-@media only screen and (max-width: var(--mobile)){
-    /* ---- index page --- */
-    .index-hero{
-        
+@media only screen and (max-width: 600px){
+    .navigation{
+        display: none;
     }
-    /* -------------------- */
-    /* ----- about page ---- */
 
-    /* ---------------------- */
-    /* ------ contact ------- */
-
-    /* ------------------------ */
-
-    /* ------- services -------- */
-
-    /* ------------------------- */
-}
-
-/* --------- laptop media queries ---------- */
-
-@media only screen and (max-width: var(--tablet)){
-    /* ---- index page --- */
-    
-        /* -------------------- */
-        /* ----- about page ---- */
-    
-        /* ---------------------- */
-        /* ------ contact ------- */
-    
-        /* ------------------------ */
-    
-        /* ------- services -------- */
-    
-        /* ------------------------- */
+    .menu-toggle{
+        display: initial;
+    }
 }
