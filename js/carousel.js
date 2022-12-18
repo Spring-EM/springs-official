@@ -13,7 +13,7 @@ gsap.set(slides, { xPercent: -100 });
 gsap.set(slides[0], { xPercent: 0 });
 
 const slideIt = () => {
-  gsap.to(slides[count], { xPercent: -150 });
+  gsap.to(slides[count], { xPercent: -220 });
   count = count < slides.length - 1 ? ++count : 0;
   gsap.fromTo(slides[count], { xPercent: 100 }, { xPercent: 0 });
   gsap.to({}, { duration: 2.5, onComplete: slideIt });

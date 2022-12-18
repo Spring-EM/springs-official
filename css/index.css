@@ -62,7 +62,8 @@
     width: 500px;
     margin: 20px;
     position: relative;
-    left: -30px;
+    left: -80px;
+    top: 50px;
     z-index: 2;
 }
 
@@ -82,11 +83,11 @@
 
 .index-hero .frosted-glass-container{
     width: 400px;
-    height: 400px;
+    height: 350px;
     position: absolute;
     /* background-color: red; */
-    top: 80px;
-    right: 160px;
+    top: 120px;
+    right: 200px;
     z-index: 3;
 }
 
@@ -178,11 +179,14 @@
     align-items: center;
 }
 
-.about .about-img{
-    width: 350px; height: auto;
-    border-radius: 10px;
+.about > img{
+    width: 500px;
+    margin: 20px;
     position: relative;
-    top: -80px;
+}
+
+.about .about-img{
+    clip-path: url(#aboutImgClip);
 }
 
 
@@ -476,72 +480,16 @@
     line-height: 3.4rem;
 }
 
-.about-hero #hero-grid div{
-    width: 100px;
-    height: 100px;
-    background-color: var(--azul-section-surface);
-    border-radius: 15px;
-}
-
-.about-hero #hero-grid .grid-item-one{
-    width: 150px;
-    height: 220px;
-    justify-self: right;
-    grid-area: a;
-    background-image: url('../assets/images/IMG-20221130-WA0016.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.about-hero #hero-grid .grid-item-two{
-    width: 180px;
-    height: 120px;
-    grid-area: b;
-    background-image: url('../assets/images/IMG-20221130-WA0017.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-.about-hero #hero-grid .grid-item-three{
-    width: 180px;
-    height: 200px;
-    align-self: center;
-    grid-area: c;
-    background-image: url('../assets/images/IMG-20221130-WA0014.jpg');
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-}
-.about-hero #hero-grid .grid-item-four{
-    width: 180px;
-    height: 230px;
-    justify-self: right;
-    grid-area: d;
-    background-image: url('../assets/images/IMG-20221130-WA0015.jpg');
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
+#hero-grid figure img{
+    width: 300px;
+    margin: 20px;
 }
 
 
-.about-hero #hero-grid{
-    width: 420px;
-    height: 95%;
-    display: grid;
-    justify-content: space-evenly;
-    grid-template-areas: "a b"
-                         "a c"
-                         "d c"
-                         "d .";
-    grid-template-columns: repeat(2, 0.5fr);
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    row-gap: 3px;
-    column-gap: 15px;
-    position: relative;
-    top: 50px;
-    /* /* justify-content: space-evenly; */
-    /* align-items: start; */
+#hero-grid figure .aboutImageOne{
+    clip-path: url(#imageOneclip);
 }
+
 
 .about-hero article{
     position: relative;
