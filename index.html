@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Springs | Home</title>
     <link rel="icon" href="/assets/images/springs-logo.png">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/carousel.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -40,12 +39,14 @@
         </ul>
     </nav>
     <div class="hamburger"></div>
-    <aside class="mobile-nav">
-        <a href="portfolio.html">portfolio</a>
-        <a href="about.html">about us</a>
-        <a href="services.html">services</a>
-        <a href="contact.html">contact</a>
-    </aside>
+    <nav class="mobile-nav">
+        <ul class="mobile-nav__list">
+            <li class="mobile-nav__items"><a href=""></a></li>
+            <li class="mobile-nav__items"><a href=""></a></li>
+            <li class="mobile-nav__items"><a href=""></a></li>
+            <li class="mobile-nav__items"><a href=""></a></li>
+        </ul>
+    </nav>
 
     <header class="hero index-hero">
         <div id="blue-accent"></div>
@@ -60,7 +61,7 @@
                 Springs help customers achieve a deep emotional
                 connections between clients and brands.
             </p>
-            <button>
+            <button id="cta">
                 learn more
                 <i class="fa-solid fa-arrow-right-long fa-rotate-by"
                     style="--fa-rotate-angle: -55deg; margin-left: 10px;"></i>

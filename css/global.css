@@ -205,10 +205,22 @@ button{
     top: 90%;
     left: 40%;
 }
+
+.mobile-nav {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+}
 /* ---------------- */
 
 @media screen and (max-width: 600){
     .navigation{
-        display: none !important;
+        display: none;
+    }
+
+    .mobile-nav{
+        display: initial;
     }
 }

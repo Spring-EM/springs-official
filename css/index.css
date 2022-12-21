@@ -1,3 +1,4 @@
+@import './global.css';
 @import './variables.css';
 
 
@@ -54,8 +55,8 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    z-index: -1;
-    cursor: pinter;
+    z-index: 1;
+    cursor: pointer;
 }
 
 .index-hero img{
@@ -116,14 +117,6 @@
     filter: blur(60px);
 }
 
-.mobile-nav{
-    display: none;
-}
-
-.hamburger{
-    display: none;
-}
-
 
 .achievements{
     width: 100%;
@@ -159,7 +152,7 @@
 }
 
 .achievements ul li .amount{
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 700;
 }
 
@@ -903,11 +896,5 @@
 }
 
 @media only screen and (max-width: 600px){
-    .navigation{
-        display: none;
-    }
 
-    .menu-toggle{
-        display: initial;
-    }
 }
