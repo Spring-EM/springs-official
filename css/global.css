@@ -212,10 +212,13 @@ button{
 
 .hamburger {
     display: none;
+    width: 26px;
+    height: 40px;
+    background-color: blue;
 }
 /* ---------------- */
 
-@media only screen and (max-widtH: 600px){
+@media only screen and (max-width: 600px){
     .navigation{
         display: none;
     }
@@ -230,10 +233,19 @@ button{
     }
 
     .hamburger{
-        display: initial;
-        width: 26px;
-        height: 40px;
-        background-color: blue;
+        /* display: initial; */
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    h1 {
+        font-size: 2.3rem;
+        line-height: calc(var(--line) + 8px);
+    }
+
+    h2 {
+        font-size: 2rem;
     }
 
 }
