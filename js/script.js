@@ -1,6 +1,6 @@
 'use scrict'
 
-const cta = document.querySelector(".cta");
+const cta = document.querySelector("#cta");
 
 // nav content switcher
 
