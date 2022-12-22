@@ -1,4 +1,4 @@
-@use 'variables';
+@use './vars';
 
 /* -------------------contact page------------------------ */
 .contact-header {
@@ -19,8 +19,8 @@
 }
 
 .contact-header article .pill {
-    background-color: $rouge-surface;
-    color: $rouge-full;
+    background-color: vars.$rouge-surface;
+    color: vars.$rouge-full;
 }
 
 .contact-header article h1 {
@@ -31,7 +31,7 @@
     font-size: 1.2rem;
     inline-size: 250px;
     word-wrap: break-word;
-    line-height: $line-sm;
+    line-height: vars.$line-sm;
 }
 
 .contact-header article #contact-phone {
@@ -137,17 +137,17 @@
 }
 
 #contact-main-content article a:nth-child(2) {
-    background-color: $azul-section-surface;
+    background-color: vars.$azul-section-surface;
 }
 
 #contact-main-content article a:nth-child(3) {
-    background-color: $rouge-surface;
+    background-color: vars.$rouge-surface;
 }
 
 #contact-main-content article a:nth-child(4) {
-    background-color: $azul-section-surface;
+    background-color: vars.$azul-section-surface;
 }
 
 #contact-main-content article a:last-child {
-    background-color: $rouge-surface;
+    background-color: vars.$rouge-surface;
 }

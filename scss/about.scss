@@ -1,4 +1,4 @@
-@use 'variables';
+@use './vars';
 
 /* -------------about styles----------- */
 .about-hero {
@@ -49,7 +49,7 @@
     width: 500px;
     height: 250px;
     border-radius: 15px;
-    background-color: $azul-section-surface;
+    background-color: vars.$azul-section-surface;
     position: relative;
     top: -80px;
 }
@@ -70,5 +70,5 @@
 }
 
 .about-content article .pill {
-    color: $rouge-full;
+    color: vars.$rouge-full;
 }

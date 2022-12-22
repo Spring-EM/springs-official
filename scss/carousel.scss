@@ -1,4 +1,4 @@
-@use 'variables';
+@use './vars';
 
 .testimonial{
     width: 100vw;
@@ -10,8 +10,8 @@
 }
 
 .testimonial .pill {
-    background-color: $rouge-slider;
-    color: $rougue-full;
+    background-color: vars.$rouge-slider;
+    color: vars.$rouge-full;
 }
 
 .testimonial__item-one{
@@ -48,7 +48,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: $rouge-slider;
+    background-color: vars.$rouge-slider;
 }
 
 .carousel-container .carousel-cell blockquote{
@@ -61,7 +61,7 @@
     font-weight: 300;
     inline-size: 500px;
     word-wrap: break-word;
-    line-height: calc($line-sm) + 10px;
+    line-height: calc(vars.$line-sm + 10px);
     position: relative;
     margin-bottom: 20px;
 }
@@ -122,7 +122,7 @@
     .carousel-container .carousel-cell blockquote p{
         font-size: 10px;
         inline-size: 250px;
-        line-height: $line-sm;
+        line-height: vars.$line-sm;
     }
 
     .carousel-container .carousel-cell blockquote cite{

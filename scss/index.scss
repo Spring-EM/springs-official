@@ -1,4 +1,4 @@
-@use 'variables';
+@use './vars';
 
 
 
@@ -18,7 +18,7 @@
     position: absolute;
         top: 0;
         left: 65%;
-        background-color: $azul-section-surface;
+        background-color: vars.$azul-section-surface;
 }
 
 .index-hero article{
@@ -138,7 +138,7 @@
     display: flex; 
     justify-content: space-around;
     align-items: center;
-    background-color: $azul-section;
+    background-color: vars.$azul-section;
 }
 
 .achievements ul li{
@@ -197,7 +197,7 @@
     font-size: 1.5rem;
     inline-size: 400px;
     word-wrap: break-word;
-    line-height: $line;
+    line-height: vars.$line;
 }
 
 .about article{
@@ -209,7 +209,7 @@
 }
 
 .about article button{
-    color: $azul-deep-nopac;
+    color: vars.$azul-deep-nopac;
 }
 
 .service-details{
@@ -218,7 +218,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: $rouge;
+    background: vars.$rouge;
     padding: 10px;
 }
 
@@ -271,15 +271,15 @@
 }
 
 [data-card] ul li:hover{
-    background: $rouge-surface;
+    background: vars.$rouge-surface;
 }
 
 .turn-rouge{
-    background: $rouge-surface;
+    background: vars.$rouge-surface;
 }
 
 .item-selected{
-    background-color: $rouge-surface;
+    background-color: vars.$rouge-surface;
 }
 
 .flex-child-two{
@@ -309,7 +309,7 @@
     border-radius: 7px;
     display: grid;
     place-items: center;
-    background-color: $rouge-slider;
+    background-color: vars.$rouge-slider;
     padding: 25px;
     margin-bottom: 5px;
 }
@@ -322,7 +322,7 @@
 
 .flex-child-two .card-two article p{
         font-size: 13.3px;
-        line-height: calc($line-sm) + 3px;
+        line-height: calc(vars.$line-sm) + 3px;
         inline-size: 300px;
         word-wrap: break-word;
         transition: .2s ease-in;
@@ -383,7 +383,7 @@
     width: 380px;
     height: 500px;
     border-radius: 10px;
-    background-color: $azul-section;
+    background-color: vars.$azul-section;
     padding: 40px 10px;
     position: relative;
     top: 30px;
@@ -414,7 +414,7 @@
     width: 160px;
     padding: 15px;
     border-radius: 10px;
-    background-color: $azul-section-surface;
+    background-color: vars.$azul-section-surface;
 }
 
 .card-azul dl dd{
@@ -475,7 +475,7 @@
 
     .index-hero article h1{
         /* text-align: center; */
-        line-height: calc($line-sm) + 20px;
+        line-height: calc(vars.$line-sm + 20px);
         inline-size: 300px;
         word-wrap: break-word;
         margin-bottom: 30px;
@@ -522,7 +522,7 @@
     .about article{
         display: flex;
         height: auto;
-        justify-content: space-arond;
+        justify-content: space-around;
         align-items: center;
     }
 
@@ -586,17 +586,17 @@
 
     [data-card] ul li:hover{
         background: none;
-        color: $rouge-surface;
+        color: vars.$rouge-surface;
     }
 
     .turn-rouge{
         background: none;
-        color: $rouge-surface;
+        color: vars.$rouge-surface;
     }
 
     .item-selected{
         background-color: none;
-        color: $rouge-surface;
+        color: vars.$rouge-surface;
     }
 
     .flex-child-two{

@@ -1,4 +1,4 @@
-@use 'variables';
+@use './vars';
 
 /* ---------services - styles -------------- */
 .services-hero {
@@ -19,7 +19,7 @@
 
 .services-hero article p {
     font-size: 13px;
-    line-height: $line-sm;
+    line-height: vars.$line-sm;
     inline-size: 300px;
     word-wrap: break-word;
 }
@@ -61,7 +61,7 @@
 }
 
 .services-hero>.services-grid div {
-    background-color: $azul-section-surface;
+    background-color: vars.$azul-section-surface;
     border-radius: 10px;
 }
 
@@ -95,7 +95,7 @@
 #services-body-content #services-list .services-list-item {
     width: 500px;
     height: 170px;
-    background-color: $azul-section;
+    background-color: vars.$azul-section;
     justify-self: center;
     align-self: center;
     border-radius: 10px;
@@ -126,27 +126,27 @@
 }
 
 #services-body-content #services-list div:first-child div {
-    background-color: $rouge-surface;
+    background-color: vars.$rouge-surface;
 }
 
 #services-body-content #services-list div:nth-child(2) div {
-    background-color: $azul-surface-deep;
+    background-color: vars.$azul-surface-deep;
 }
 
 #services-body-content #services-list div:nth-child(3) div {
-    background-color: $azul-surface-deep;
+    background-color: vars.$azul-surface-deep;
 }
 
 #services-body-content #services-list div:nth-child(4) div {
-    background-color: $rouge-surface;
+    background-color: vars.$rouge-surface;
 }
 
 #services-body-content #services-list div:nth-child(5) div {
-    background-color: $rouge-surface;
+    background-color: vars.$rouge-surface;
 }
 
 #services-body-content #services-list div:nth-child(6) div {
-    background-color: $azul-surface-deep;
+    background-color: vars.$azul-surface-deep;
 }
 
 
@@ -195,20 +195,20 @@
 }
 
 #services-body-content #services-connect nav a:first-child {
-    background-color: $azul-section-surface;
+    background-color: vars.$azul-section-surface;
 }
 
 #services-body-content #services-connect nav a:nth-child(2) {
-    background-color: $rouge-surface;
+    background-color: vars.$rouge-surface;
 }
 
 
 #services-body-content #services-connect nav a:nth-child(3) {
-    background-color: $azul-section-surface;
+    background-color: vars.$azul-section-surface;
 }
 
 #services-body-content #services-connect nav a:nth-child(4) {
-    background-color: $rouge-surface;
+    background-color: vars.$rouge-surface;
 }
 
 
