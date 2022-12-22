@@ -1,0 +1,135 @@
+@use 'variables';
+
+.testimonial{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.testimonial .pill {
+    background-color: $rouge-slider;
+    color: $rougue-full;
+}
+
+.testimonial__item-one{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.testimonial__item-one p{
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.testimonial__item-two{
+    width: 100%;
+    height: 70%;
+}
+
+.carousel-container{
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+}
+
+.carousel-container .carousel-cell{
+    position: absolute;
+    top: 0;
+    width: 75%;
+    height: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $rouge-slider;
+}
+
+.carousel-container .carousel-cell blockquote{
+    position: relative;
+    left: -50px;
+}
+
+.carousel-container .carousel-cell blockquote p{
+    font-size: 13px;
+    font-weight: 300;
+    inline-size: 500px;
+    word-wrap: break-word;
+    line-height: calc($line-sm) + 10px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.carousel-container .carousel-cell blockquote cite{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.carousel-container .carousel-cell img{
+    width: 500px;
+    position: relative;
+    left: -13rem;
+}
+
+#carouselImgCrop{
+    width: 350px;
+    height: 400px;
+}
+
+.carousel-container .carousel-cell #carousel__img-one{
+    clip-path: url(#carouselCellImgOne);
+}
+.carousel-container .carousel-cell #carousel__img-two{
+    clip-path: url(#carouselCellImgTwo);
+}
+.carousel-container .carousel-cell #carousel__img-three{
+    clip-path: url(#carouselCellImgThree);
+}
+.carousel-container .carousel-cell #carousel__img-four{
+    clip-path: url(#carouselCellImgFour);
+}
+
+@media only screen and (max-width: 600px){
+    .testimonial__item-one{
+        justify-content: space-around;
+    }
+
+    .testimonial__item-one p{
+        font-size: 12px;
+    }
+
+    .carousel-container .carousel-cell{
+        width:70%;
+        height: 75%;
+        flex-direction: column;
+    }
+
+    .carousel-container .carousel-cell img{
+        width: 300px;
+        left: -25%;
+    }
+
+    .carousel-container .carousel-cell blockquote{
+        left: 0px;
+    }
+
+    .carousel-container .carousel-cell blockquote p{
+        font-size: 10px;
+        inline-size: 250px;
+        line-height: $line-sm;
+    }
+
+    .carousel-container .carousel-cell blockquote cite{
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 300px){
+
+}

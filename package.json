@@ -1,0 +1,13 @@
+{
+  "name": "springs",
+  "version": "1.0.0",
+  "description": "official website for springs events and marketing",
+  "main": "index.js",
+  "repository": "https://github.com/Hexatechinc/springs-official-new.git",
+  "author": "Hill Onyechekwa <hillonyechekwa@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start" : "live-server --open=index.html --quiet",
+    "start:watch": "sass --watch scss:css"
+  }
+}
