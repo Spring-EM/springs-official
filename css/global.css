@@ -89,9 +89,8 @@ button{
     border-radius: 30px;
     color: var(--azul-deep-nopac);
     padding: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    place-items: center;
     text-transform: capitalize;
 }
 
@@ -246,6 +245,11 @@ button{
 
     h2 {
         font-size: 2rem;
+    }
+    .pill{
+        width: 140px;
+        height: 20px;
+        font-size: 8px;
     }
 
 }
