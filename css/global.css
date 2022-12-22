@@ -98,8 +98,8 @@ button{
 .clients-nav{
     width: 100%;
     height: 150px;
-    display: flex;
-    justify-content: center; align-items: center;
+    display: grid;
+    place-items: center;
     background-color: var(--azul-section);
 }
 
@@ -251,5 +251,69 @@ button{
         height: 20px;
         font-size: 8px;
     }
+
+    .clients-nav{
+        width: 100%;
+        height: auto;
+    }
+
+    .clients-nav ul{
+        width: 100%;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .footer{
+        height: 150vh;
+        flex-direction: column;
+    }
+
+    .footer-nav{
+        width: 100%;
+        display: grid;
+        place-items: center;
+    }
+
+    .footer-nav dl{
+        width: 100%;
+        height: 450px;
+        align-items: center;
+    }
+
+    .footer-nav dl dd{
+        font-weight: 700;
+        inline-size: 250px;
+        word-wrap: break-word;
+        text-align: center;
+    }
+
+    .footer .contact-details{
+        width: 100%;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items : center;
+    }
+
+    .footer .contact-details li a{
+        text-align: center;
+    }
+
+    .footer .contact-details li p{
+        text-align: center;
+    }
+
+    .footer #copyright{
+        top: 98%;
+        left: 25%;
+        font-size: 13px;
+    }
+
+}
+
+@media only screen and (max-width: 300px){
 
 }

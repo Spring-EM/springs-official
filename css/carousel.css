@@ -90,8 +90,41 @@
     clip-path: url(#carouselCellImgFour);
 }
 
-@media only screen and (max-width: 400px){
-    .testimonial{
-        
+@media only screen and (max-width: 600px){
+    .testimonial__item-one{
+        justify-content: space-around;
     }
+
+    .testimonial__item-one p{
+        font-size: 12px;
+    }
+
+    .carousel-container .carousel-cell{
+        width:70%;
+        height: 75%;
+        flex-direction: column;
+    }
+
+    .carousel-container .carousel-cell img{
+        width: 300px;
+        left: -25%;
+    }
+
+    .carousel-container .carousel-cell blockquote{
+        left: 0px;
+    }
+
+    .carousel-container .carousel-cell blockquote p{
+        font-size: 10px;
+        inline-size: 250px;
+        line-height: var(--line-sm);
+    }
+
+    .carousel-container .carousel-cell blockquote cite{
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 300px){
+
 }
