@@ -3,8 +3,13 @@
   width: 100vw;
   height: 100vh;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: flex-start;
+}
+@media only screen and (max-width: 600px) {
+  .about-hero {
+    flex-direction: column;
+  }
 }
 
 .about-hero h1 {
@@ -13,7 +18,6 @@
   font-size: 2.5rem;
   line-height: 3.4rem;
 }
-
 #hero-grid figure img {
   width: 300px;
   margin: 20px;
@@ -39,6 +43,11 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+@media only screen and (max-width: 600px) {
+  .about-content {
+    flex-direction: column;
+  }
 }
 
 .about-content .about-content-img {

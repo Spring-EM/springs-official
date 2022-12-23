@@ -5,8 +5,11 @@
     width: 100vw;
     height: 100vh;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-start;
+    @media #{vars.$media-600-down}{
+        flex-direction: column;
+    }
 }
 
 .about-hero h1 {
@@ -14,6 +17,9 @@
     word-wrap: break-word;
     font-size: 2.5rem;
     line-height: 3.4rem;
+    @media #{vars.$media-600-down}{
+        // inline-size:
+    }
 }
 
 #hero-grid figure img {
@@ -43,6 +49,9 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    @media #{vars.$media-600-down}{
+        flex-direction: column;
+    }
 }
 
 .about-content .about-content-img {
