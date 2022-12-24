@@ -155,8 +155,7 @@ button {
     height: 500px;
     display: flex;
     flex-direction: column;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 30px;
   }
 }
 @media only screen and (max-width: 300px) {
@@ -194,11 +193,17 @@ button {
   .footer {
     height: auto;
     flex-direction: column;
+    padding-top: 30px;
   }
 }
 
 .footer img {
   width: 100px;
+}
+@media only screen and (max-width: 600px) {
+  .footer img {
+    width: 200px;
+  }
 }
 
 .footer-nav {

@@ -58,6 +58,11 @@
   position: relative;
   top: -80px;
 }
+@media only screen and (max-width: 600px) {
+  .about-content .about-content-img {
+    width: 300px;
+  }
+}
 
 .about-content article {
   height: 50%;
@@ -66,12 +71,26 @@
   justify-content: space-around;
   align-items: flex-start;
 }
+@media only screen and (max-width: 600px) {
+  .about-content article {
+    align-items: center;
+    height: 500px;
+  }
+}
 
 .about-content article p {
   font-size: 13px;
   inline-size: 500px;
   word-wrap: break-word;
   text-align: left;
+}
+@media only screen and (max-width: 600px) {
+  .about-content article p {
+    font-size: 12px;
+    line-height: 15px;
+    inline-size: 300px;
+    text-align: center;
+  }
 }
 
 .about-content article .pill {

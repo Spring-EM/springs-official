@@ -7,6 +7,12 @@
   place-items: center;
   position: relative;
 }
+@media only screen and (max-width: 600px) {
+  .contact-header {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 .contact-header article {
   display: flex;
@@ -14,6 +20,11 @@
   justify-content: space-evenly;
   align-items: start;
   height: 50%;
+}
+@media only screen and (max-width: 600px) {
+  .contact-header article {
+    height: 500px;
+  }
 }
 
 .contact-header article .pill {
@@ -48,6 +59,11 @@
   z-index: 2;
 }
 
+#contactHeroMask {
+  width: 200px;
+  height: 300px;
+}
+
 .contact-header .contacts-hero {
   clip-path: url(#contactHeroClip);
 }
@@ -61,6 +77,11 @@
   top: 65px;
   border-radius: 10px;
   z-index: 1;
+}
+@media only screen and (max-width: 600px) {
+  .contact-header .contact-image-accent {
+    display: none;
+  }
 }
 
 #or {
@@ -78,15 +99,39 @@
   align-items: center;
   position: relative;
 }
+@media only screen and (max-width: 600px) {
+  #contact-main-content {
+    flex-direction: column;
+  }
+}
 
 #contact-main-content img:first-child {
   width: 450px;
   position: relative;
   z-index: 2;
 }
+@media only screen and (max-width: 600px) {
+  #contact-main-content img:first-child {
+    width: 300px;
+    height: 300px;
+    left: -20%;
+    top: 30px;
+  }
+}
 
 #contact-main-content .contact-content-image {
   clip-path: url(#contactContentClip);
+}
+
+#contactContentMask {
+  width: 250px;
+  height: 350px;
+}
+@media only screen and (max-width: 600px) {
+  #contactContentMask {
+    width: 200px;
+    height: 280px;
+  }
 }
 
 #contact-main-content #contact-content-image-accent {
@@ -99,6 +144,11 @@
   top: 130px;
   z-index: 1;
 }
+@media only screen and (max-width: 600px) {
+  #contact-main-content #contact-content-image-accent {
+    display: none;
+  }
+}
 
 #contact-main-content article {
   width: 50%;
@@ -110,12 +160,25 @@
   position: relative;
   left: 100px;
 }
+@media only screen and (max-width: 600px) {
+  #contact-main-content article {
+    width: 100%;
+    left: 0px;
+    align-items: center;
+  }
+}
 
 #contact-main-content article > p {
   font-size: 1.5rem;
   inline-size: 400px;
   margin-bottom: 20px;
   font-weight: 600;
+}
+@media only screen and (max-width: 600px) {
+  #contact-main-content article > p {
+    inline-size: 300px;
+    word-wrap: break-word;
+  }
 }
 
 #contact-main-content article a {

@@ -51,6 +51,7 @@
     align-items: center;
     @media #{vars.$media-600-down}{
         flex-direction: column;
+
     }
 }
 
@@ -61,6 +62,9 @@
     background-color: vars.$azul-section-surface;
     position: relative;
     top: -80px;
+    @media #{vars.$media-600-down} {
+        width: 300px;
+    }
 }
 
 .about-content article {
@@ -69,6 +73,11 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
+    @media #{vars.$media-600-down} {
+        // justify-content: center;
+        align-items: center;
+        height: 500px;
+    }
 }
 
 .about-content article p {
@@ -76,6 +85,12 @@
     inline-size: 500px;
     word-wrap: break-word;
     text-align: left;
+    @media #{vars.$media-600-down} {
+        font-size: 12px;
+        line-height: vars.$line-sm;
+        inline-size: 300px;
+        text-align: center;
+    }
 }
 
 .about-content article .pill {

@@ -142,8 +142,7 @@ button{
                 height: 500px;
                 display: flex;
                 flex-direction: column;
-                padding-top: 10px;
-                padding-bottom: 10px;
+                padding: 10px 30px;
             }
         @media #{vars.$media-300-down}{
                 width: 100%;
@@ -177,11 +176,15 @@ button{
     @media #{vars.$media-600-down} {
             height: auto;
             flex-direction: column;
+            padding-top: 30px;
         }
 }
 
 .footer img{
     width: 100px;
+    @media #{vars.$media-600-down} {
+        width: 200px;
+    }
 }
 
 .footer-nav{

@@ -6,6 +6,12 @@
   justify-content: space-around;
   align-items: center;
 }
+@media only screen and (max-width: 600px) {
+  .services-hero {
+    flex-direction: column;
+    height: 150vh;
+  }
+}
 
 .services-hero article {
   display: flex;
@@ -14,12 +20,24 @@
   align-items: flex-start;
   height: 40%;
 }
+@media only screen and (max-width: 600px) {
+  .services-hero article {
+    height: 500px;
+    align-items: center;
+  }
+}
 
 .services-hero article p {
   font-size: 13px;
   line-height: 15px;
   inline-size: 300px;
   word-wrap: break-word;
+}
+@media only screen and (max-width: 600px) {
+  .services-hero article p {
+    text-align: center;
+    line-height: 31px;
+  }
 }
 
 .services-hero > .services-grid .sg-item-one {
@@ -28,12 +46,26 @@
   height: 200px;
   justify-self: end;
 }
+@media only screen and (max-width: 600px) {
+  .services-hero > .services-grid .sg-item-one {
+    width: 200px;
+    height: 200px;
+    justify-self: center;
+  }
+}
 
 .services-hero > .services-grid .sg-item-two {
   grid-area: b;
   width: 250px;
   height: 200px;
   align-self: start;
+}
+@media only screen and (max-width: 600px) {
+  .services-hero > .services-grid .sg-item-two {
+    width: 200px;
+    height: 200px;
+    justify-self: center;
+  }
 }
 
 .services-hero > .services-grid .sg-item-three {
@@ -42,6 +74,13 @@
   height: 300px;
   align-self: start;
   justify-self: end;
+}
+@media only screen and (max-width: 600px) {
+  .services-hero > .services-grid .sg-item-three {
+    width: 200px;
+    height: 200px;
+    justify-self: center;
+  }
 }
 
 .services-hero > .services-grid {
@@ -56,6 +95,15 @@
   gap: 10px;
   /* background-color: blue; */
 }
+@media only screen and (max-width: 600px) {
+  .services-hero > .services-grid {
+    width: 300px;
+    height: 620px;
+    grid-template-areas: "a" "b" "c";
+    grid-template-rows: 1r;
+    grid-template-columns: 1fr;
+  }
+}
 
 .services-hero > .services-grid div {
   background-color: hsl(0deg, 0%, 95%);
@@ -69,6 +117,11 @@
   flex-flow: column;
   justify-content: center;
   align-items: center;
+}
+@media only screen and (max-width: 600px) {
+  #services-body-content {
+    padding-top: 50px;
+  }
 }
 
 #services-body-content .pill {
@@ -88,6 +141,14 @@
   grid-template-rows: repeat(3, 1fr);
   gap: 10px;
 }
+@media only screen and (max-width: 600px) {
+  #services-body-content #services-list {
+    height: 800px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    margin-top: 30px;
+  }
+}
 
 #services-body-content #services-list .services-list-item {
   width: 500px;
@@ -97,6 +158,12 @@
   align-self: center;
   border-radius: 10px;
 }
+@media only screen and (max-width: 600px) {
+  #services-body-content #services-list .services-list-item {
+    width: 300px;
+    height: 80px;
+  }
+}
 
 #services-body-content #services-list .services-list-item div {
   width: 50px;
@@ -105,9 +172,20 @@
   display: grid;
   place-items: center;
 }
+@media only screen and (max-width: 600px) {
+  #services-body-content #services-list .services-list-item div {
+    width: 30px;
+    height: 30px;
+  }
+}
 
 #services-body-content #services-list .services-list-item div img {
   width: 30px;
+}
+@media only screen and (max-width: 600px) {
+  #services-body-content #services-list .services-list-item div img {
+    width: 15px;
+  }
 }
 
 #services-body-content #services-list .services-list-item {
@@ -119,6 +197,11 @@
 #services-body-content #services-list .services-list-item p {
   font-size: 2.8rem;
   font-weight: 600;
+}
+@media only screen and (max-width: 600px) {
+  #services-body-content #services-list .services-list-item p {
+    font-size: 1.2rem;
+  }
 }
 
 #services-body-content #services-list div:first-child div {
@@ -153,9 +236,21 @@
   justify-content: space-around;
   align-items: center;
 }
+@media only screen and (max-width: 600px) {
+  #services-body-content #services-connect {
+    height: 100vh;
+  }
+}
 
 #services-body-content #services-connect > p {
   font-size: 1.5rem;
+}
+@media only screen and (max-width: 600px) {
+  #services-body-content #services-connect > p {
+    font-size: 1.2rem;
+    inline-size: 250px;
+    word-wrap: break-word;
+  }
 }
 
 #services-body-content #services-connect nav {
@@ -164,6 +259,13 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+@media only screen and (max-width: 600px) {
+  #services-body-content #services-connect nav {
+    width: 100%;
+    height: 500px;
+    flex-direction: column;
+  }
 }
 
 #services-body-content #services-connect nav a {
