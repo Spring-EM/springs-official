@@ -1,0 +1,100 @@
+/* -------------about styles----------- */
+.about-hero {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+@media only screen and (max-width: 600px) {
+  .about-hero {
+    flex-direction: column;
+  }
+}
+
+.about-hero h1 {
+  inline-size: 320px;
+  word-wrap: break-word;
+  font-size: 2.5rem;
+  line-height: 3.4rem;
+}
+#hero-grid figure img {
+  width: 300px;
+  margin: 20px;
+}
+
+#hero-grid figure .aboutImageOne {
+  clip-path: url(#imageOneclip);
+}
+
+.about-hero article {
+  position: relative;
+  top: 100px;
+  left: 50px;
+}
+
+.about-hero article h1 {
+  margin-top: 30px;
+}
+
+.about-content {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@media only screen and (max-width: 600px) {
+  .about-content {
+    flex-direction: column;
+  }
+}
+
+.about-content .about-content-img {
+  width: 500px;
+  height: 250px;
+  border-radius: 15px;
+  background-color: hsl(0deg, 0%, 95%);
+  position: relative;
+  top: -80px;
+}
+@media only screen and (max-width: 600px) {
+  .about-content .about-content-img {
+    width: 300px;
+  }
+}
+
+.about-content article {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+@media only screen and (max-width: 600px) {
+  .about-content article {
+    align-items: center;
+    height: 500px;
+  }
+}
+
+.about-content article p {
+  font-size: 13px;
+  inline-size: 500px;
+  word-wrap: break-word;
+  text-align: left;
+}
+@media only screen and (max-width: 600px) {
+  .about-content article p {
+    font-size: 12px;
+    line-height: 15px;
+    inline-size: 300px;
+    text-align: center;
+  }
+}
+
+.about-content article .pill {
+  color: hsl(359deg, 58%, 45%);
+}
+
+/*# sourceMappingURL=about.css.map */

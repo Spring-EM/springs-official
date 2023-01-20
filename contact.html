@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Springs | Contact Us</title>
     <link rel="icon" href="/assets/images/springs-logo.png">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/contact.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
@@ -30,6 +30,16 @@
             </li>
         </ul>
     </nav>
+
+    <div class="hamburger"></div>
+    <nav class="mobile-overlay">
+        <ul class="mobile-overlay__list">
+            <li class="mobile-nav__items"><a href=""></a></li>
+            <li class="mobile-nav__items"><a href=""></a></li>
+            <li class="mobile-nav__items"><a href=""></a></li>
+            <li class="mobile-nav__items"><a href=""></a></li>
+        </ul>
+    </nav>
     <header class="contact-header">
         <article class="contat-header-content">
             <div class="pill">contact us</div>
@@ -44,7 +54,7 @@
         <svg width="0" height="0">
             <defs>
                 <clipPath id="contactHeroClip">
-                    <rect x="150" y="0" rx="10" ry="10" width="200" height="300"/>
+                    <rect x="150" y="0" rx="10" ry="10" id="contactHeroMask"/>
                 </clipPath>
             </defs>
         </svg>
@@ -56,7 +66,7 @@
         <svg width="0" height="0">
             <defs>
                 <clipPath id="contactContentClip">
-                    <rect x="130" y="0" rx="10" ry="10" width="250" height="350" />
+                    <rect x="130" y="0" rx="10" ry="10" id="contactContentMask" />
                 </clipPath>
             </defs>
         </svg>

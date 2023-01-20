@@ -1,5 +1,7 @@
 'use scrict'
 
+const cta = document.querySelector("#cta");
+
 // nav content switcher
 
 const contentNav = document.querySelectorAll(".card-one li")
@@ -79,3 +81,9 @@ navItemSix.addEventListener('click', function() {
 
 var getCurrentYear = new Date().getFullYear()
 currentYear.innerHTML = getCurrentYear
+
+cta.addEventListener('click', (e) => {
+    e.preventDefault()
+
+    location.assign('./services.html')
+})

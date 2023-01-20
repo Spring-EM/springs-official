@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Springs | Home</title>
     <link rel="icon" href="/assets/images/springs-logo.png">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/flickity.css" media="screen">
+    <link rel="stylesheet" href="css/carousel.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
@@ -20,6 +20,7 @@
     <script src="./js/gsap/scrollTrigger.min.js" defer></script>
     <script src="./js/script.js" defer></script>
     <script src="./js/scroll.js" defer></script>
+    <script src="./js/carousel.js" defer></script>
 </head>
 
 <body>
@@ -38,11 +39,21 @@
             </li>
         </ul>
     </nav>
-    <header class="hero index-hero">
+    <div class="hamburger"></div>
+    <nav class="mobile-overlay">
+        <ul class="mobile-overlay__list">
+            <li class="mobile-nav__items"><a href=""></a></li>
+            <li class="mobile-nav__items"><a href=""></a></li>
+            <li class="mobile-nav__items"><a href=""></a></li>
+            <li class="mobile-nav__items"><a href=""></a></li>
+        </ul>
+    </nav>
+
+    <header class="index-hero" id="index-hero">
         <div id="blue-accent"></div>
         <article>
             <h1>
-                Let create a memorable and
+                Let's create a memorable and
                 innovative customer experience
                 between your customers and
                 your brand.
@@ -51,7 +62,7 @@
                 Springs help customers achieve a deep emotional
                 connections between clients and brands.
             </p>
-            <button>
+            <button id="cta">
                 learn more
                 <i class="fa-solid fa-arrow-right-long fa-rotate-by"
                     style="--fa-rotate-angle: -55deg; margin-left: 10px;"></i>
@@ -61,11 +72,11 @@
             <div class="frosted-glass frosted-glass-one"></div>
             <div class="frosted-glass frosted-glass-two"></div>
         </div>
-        <img class="index-hero-image" src="./assets/images/hero.png" alt="A woman smiling" />
-        <svg width="0" height="0">
+        <img class="index-hero-image" src="./assets/images/african-smiling-lady.webp" alt="A woman smiling" />
+        <svg width="0" height="0" preserveAspectRatio="none">
             <defs>
                 <clipPath id="indexHeroImageClip">
-                    <rect x="100" y="0" rx="10" ry="10" width="250" height="400" />
+                    <rect x="150" y="0" rx="10" ry="10" id="heroImageCrop" />
                 </clipPath>
             </defs>
         </svg>
@@ -102,9 +113,15 @@
         </ul>
     </section>
     <section class="about">
-        <svg viewBox="0 0 450 500" class="about-img" preserveAspectRatio=none>
-            <image href="/assets/images/aboutimage.png">
+        <img class="about-img" src="/assets/images/team-work.webp" alt="" >
+        <svg width="0" height="0" preserveAspectRatio=none>
+            <defs>
+                <clipPath id="aboutImgClip">
+                    <rect x="100" y="0" rx="10" ry="10" id="aboutImgCrop" ></rect>
+                </clipPath>
+            </defs>
         </svg>
+        
         <article>
             <div class="pill"> About springs-em</div>
             <h2>Your trusted partner</h2>
@@ -119,7 +136,7 @@
         </article>
     </section>
 
-    <section class="service-details">
+    <section class="service-details" id="services-section">
         <article class="flex-child-one">
             <h2>services details</h2>
             <p>6 premium services offered by
@@ -138,7 +155,11 @@
         <article class="flex-child-two">
             <article class="card-two" data-content="">
                 <article class="">
+                    <span class="card__two-icons">
+                        <img src="/assets/icons/EM Icon.svg" alt=""/>
+                    </span>
                     <h2>Experiential Marketing Pro!</h2>
+                    <p>
                     Technology and social media has made it easier for companies to market to their consumer in some
                     ways. However, these
                     marketing tactics lack the connection and interaction that makes a lasting impression on a consumer.
@@ -150,92 +171,100 @@
                     We engage our clients' consumers and creates real-life experience that will be remembered. We focus
                     on getting the
                     consumer to experience our client's brand.
+                    </p>
                 </article>
                 <article class="hide">
+                        <span class="card__two-icons"><img src="/assets/icons/DM Icon.svg" alt="" /></span>
                     <h2>Digital Marketing</h2>
-                    Use lap as chair. In the middle of the night i crawl onto your chest and purr gently to help you
-                    sleep chew master's
-                    slippers for adventure always make plans to dominate world and then take a nap. Miaow then turn
-                    around
-                    and show you my bum steal mom's crouton while she is in the bathroom and cuddle no cuddle cuddle
-                    love scratch scratch
-                    but i could pee on this if i had the energy but sees bird in air, breaks into cage and attacks
-                    creature. Run as fast as
-                    i can into another room for no reason make plans to dominate world and then take a nap hiss and
-                    stare at nothing then
-                    run suddenly away, lick plastic bags poop in the plant pot but cats making all the muffins. Pee in
-                    the shoe time to go
-                    zooooom or fight own tail find something else more interesting. Kitty kitty pussy cat doll reaches
-                    under door into
-                    adjacent room. Let me in let me out let me in let me out let me in let me out who broke this door
-                    anyway sleep. Run up
-                    and down stairs bawl under human beds.
+                    <p>
+                    Technology and social media has made it easier for companies to market to their consumer in some
+                    ways. However, these
+                    marketing tactics lack the connection and interaction that makes a lasting impression on a consumer.
+                    Think about how many advertisements you see when surfing the Internet, billboards when you are
+                    driving, and commercials
+                    when you are watching television. How many of those advertisements could you recall right now?
+                    Chances are you probably
+                    cannot recall very many due to the amount of advertisements and lack of interaction.
+                    We engage our clients' consumers and creates real-life experience that will be remembered. We focus
+                    on getting the
+                    consumer to experience our client's brand.
+                    </p>
                 </article>
                 <article class="hide">
+                    <span class="card__two-icons">
+                        <img src="/assets/icons/SO Icon.svg" alt=""/>
+                    </span>
                     <h2>SmartBox/Shared Office</h2>
-                    Sleeps on my head intently sniff hand. Scratch at door to be let outside, get let out then scratch
-                    at door immmediately
-                    after to be let back in ooooh feather moving feather! yet hiding behind the couch until lured out by
-                    a feathery toy claw
-                    at curtains stretch and yawn nibble on tuna ignore human bite human hand yet sleep in the bathroom
-                    sink but scream for
-                    no reason at 4 am for leave fur on owners clothes. Poop in a handbag look delicious and drink the
-                    soapy mopping up water
-                    then puke giant foamy fur-balls jump around on couch, meow constantly until given food, so taco cat
-                    backwards spells
-                    taco cat, but chew on cable or being gorgeous with belly side up for howl uncontrollably for no
-                    reason
+                    <p>
+                    Technology and social media has made it easier for companies to market to their consumer in some
+                    ways. However, these
+                    marketing tactics lack the connection and interaction that makes a lasting impression on a consumer.
+                    Think about how many advertisements you see when surfing the Internet, billboards when you are
+                    driving, and commercials
+                    when you are watching television. How many of those advertisements could you recall right now?
+                    Chances are you probably
+                    cannot recall very many due to the amount of advertisements and lack of interaction.
+                    We engage our clients' consumers and creates real-life experience that will be remembered. We focus
+                    on getting the
+                    consumer to experience our client's brand.
+                    </p>
                 </article>
                 <article class="hide">
+                    <span class="card__two-icons">
+                        <img src="/assets/icons/SL Icon.svg" alt="" >
+                    </span>
                     <h2>Springs Logistics</h2>
-                    Pushed the mug off the table poop on grasses, but toilet paper attack claws fluff everywhere meow
-                    miao french ciao
-                    litterbox mess up all the toilet paper or cat fur is the new black or i'm bored inside, let me out
-                    i'm lonely outside,
-                    let me in i can't make up my mind whether to go in or out, guess i'll just stand partway in and
-                    partway out,
-                    contemplating the universe for half an hour how dare you nudge me with your foot?!?! leap into the
-                    air in greatest
-                    offense!. Licks paws i could pee on this if i had the energy scratch so owner bleeds, scream for no
-                    reason at 4 am.
-                    Sugar, my siamese, stalks me (in a good way), day and night i like cats because they are fat and
-                    fluffy.
+                    <p>
+                    Technology and social media has made it easier for companies to market to their consumer in some
+                    ways. However, these
+                    marketing tactics lack the connection and interaction that makes a lasting impression on a consumer.
+                    Think about how many advertisements you see when surfing the Internet, billboards when you are
+                    driving, and commercials
+                    when you are watching television. How many of those advertisements could you recall right now?
+                    Chances are you probably
+                    cannot recall very many due to the amount of advertisements and lack of interaction.
+                    We engage our clients' consumers and creates real-life experience that will be remembered. We focus
+                    on getting the
+                    consumer to experience our client's brand.
+                </p>
                 </article>
                 <article class="hide">
+                    <span class="card__two-icons">
+                        <img src="/assets/icons/SE Icon.svg" alt="" >
+                    </span>
                     <h2> Springs Event</h2>
-                    Thinking longingly about tuna brine lick arm hair yet cat playing a fiddle in hey diddle diddle? the
-                    cat was chasing the
-                    mouse so where is it? i saw that bird i need to bring it home to mommy squirrel! . Cat ass trophy.
-                    Try to hold own back
-                    foot to clean it but foot reflexively kicks you in face, go into a rage and bite own foot, hard spot
-                    something, big
-                    eyes, big eyes, crouch, shake butt, prepare to pounce for chew the plant i like frogs and 0 gravity,
-                    hide head under
-                    blanket so no one can see paw at your fat belly. Purr while eating. I love cats i am one wake up
-                    scratch humans leg for
-                    food then purr then i have a and relax hide head under blanket so no one can see for meow for food,
-                    then when human
-                    fills food dish, take a few bites of food and continue meowing so jump up to edge of bath, fall in
-                    then scramble in a
-                    mad panic to get out.
+                    <p>
+                Technology and social media has made it easier for companies to market to their consumer in some
+                ways. However, these
+                marketing tactics lack the connection and interaction that makes a lasting impression on a consumer.
+                Think about how many advertisements you see when surfing the Internet, billboards when you are
+                driving, and commercials
+                when you are watching television. How many of those advertisements could you recall right now?
+                Chances are you probably
+                cannot recall very many due to the amount of advertisements and lack of interaction.
+                We engage our clients' consumers and creates real-life experience that will be remembered. We focus
+                on getting the
+                consumer to experience our client's brand.
+                    </p>
                 </article>
                 <article class="hide">
+                    <span class="card__two-icons">
+                        <img src="/assets/icons/SEO icon.svg" alt="" >
+                    </span>
                     <h2>SEO</h2>
-                    Thinking longingly about tuna brine lick arm hair yet cat playing a fiddle in hey diddle diddle? the
-                    cat was chasing the
-                    mouse so where is it? i saw that bird i need to bring it home to mommy squirrel! . Cat ass trophy.
-                    Try to hold own back
-                    foot to clean it but foot reflexively kicks you in face, go into a rage and bite own foot, hard spot
-                    something, big
-                    eyes, big eyes, crouch, shake butt, prepare to pounce for chew the plant i like frogs and 0 gravity,
-                    hide head under
-                    blanket so no one can see paw at your fat belly. Purr while eating. I love cats i am one wake up
-                    scratch humans leg for
-                    food then purr then i have a and relax hide head under blanket so no one can see for meow for food,
-                    then when human
-                    fills food dish, take a few bites of food and continue meowing so jump up to edge of bath, fall in
-                    then scramble in a
-                    mad panic to get out.
+                    <p>
+                    Technology and social media has made it easier for companies to market to their consumer in some
+                    ways. However, these
+                    marketing tactics lack the connection and interaction that makes a lasting impression on a consumer.
+                    Think about how many advertisements you see when surfing the Internet, billboards when you are
+                    driving, and commercials
+                    when you are watching television. How many of those advertisements could you recall right now?
+                    Chances are you probably
+                    cannot recall very many due to the amount of advertisements and lack of interaction.
+                    We engage our clients' consumers and creates real-life experience that will be remembered. We focus
+                    on getting the
+                    consumer to experience our client's brand.
+                    </p>
                 </article>
 
             </article>
@@ -244,7 +273,7 @@
     <section class="why-choose">
         <article class="card-no-azul">
             <div class="pill">why choose us</div>
-            <h2>Reasons why springs-em is the best.</h2>
+            <h2>Reasons why Springs Events &amp; Marketing is the best.</h2>
             <p>This contains our strength and essence. Things that make us different from others</p>
             <dl>
                 <dt>highest success rate</dt>
@@ -294,11 +323,108 @@
             </dl>
         </article>
     </section>
-    <section class="testimonial">
+    <section class="testimonial testimonial__container">
+        <article class="testimonial__item testimonial__item-one">
         <div class="pill">Testimonials</div>
 
         <h2> our work speaks</h2>
         <p>listen to what our clients have to say about the services we render</p>
+        </article>
+        <div class="carousel-container  testimonial__item testimonial__item-two">
+            <div class="carousel-cell">
+                <img id="carousel__img-one" src="/assets/images/womaninredsmiling.jpg" alt="a woman in red similng" >
+                <svg width="0" height="0">
+                    <defs>
+                        <clipPath id="carouselCellImgOne">
+                            <rect id="carouselImgCrop" x="130" y="0"/>
+                        </clipPath>
+                    </defs>      
+                </svg>
+                <blockquote>
+                    <p>
+                        lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                        mollit anim id est laborum.
+                    </p>
+                    <cite>
+                        Olive lane
+                    </cite>
+                </blockquote>
+            </div>
+            <div class="carousel-cell">
+                    <img id="carousel__img-two" src="/assets/images/womaninredsmiling.jpg" alt="a woman in red similng">
+                    <svg width="0" height="0">
+                        <defs>
+                            <clipPath id="carouselCellImgTwo">
+                                <rect id="carouselImgCrop" x="130" y="0" width="350" height="400" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <blockquote>
+                        <p>
+                            lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                            mollit anim id est laborum.
+                        </p>
+                        <cite>
+                            Olive lane
+                        </cite>
+                    </blockquote>
+            </div>
+            <div class="carousel-cell">
+                <img id="carousel__img-three" src="/assets/images/womaninredsmiling.jpg" alt="a woman in red similng">
+                <svg width="0" height="0">
+                    <defs>
+                        <clipPath id="carouselCellImgThree">
+                            <rect  id="carouselImgCrop" x="130" y="0" width="350" height="400" />
+                        </clipPath>
+                    </defs>
+                </svg>
+                <blockquote>
+                        <p>
+                            lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                            mollit anim id est laborum.
+                        </p>
+                        <cite>
+                            Olive lane
+                        </cite>
+                    </blockquote>
+            </div>
+            <div class="carousel-cell">
+                <img id="carousel__img-four" src="/assets/images/womaninredsmiling.jpg" alt="a woman in red similng">
+                <svg width="0" height="0">
+                    <defs>
+                        <clipPath id="carouselCellImgFour">
+                            <rect id="carouselImgCrop" x="130" y="0" width="350" height="400" />
+                        </clipPath>
+                    </defs>
+                </svg>
+                <blockquote>
+                    <p>
+                        lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                        mollit anim id est laborum.
+                    </p>
+                    <cite>
+                        Olive lane
+                    </cite>
+                </blockquote>
+            </div>
+            
+        </div>
     </section>
     
     </section>
@@ -323,18 +449,18 @@
         <nav class="footer-nav">
             <dl>
                 <dt>Services</dt>
-                <dd>Experiential Marketing</dd>
-                <dd>Digital Marketing</dd>
-                <dd>Smart Box/ Shared Office</dd>
-                <dd>Springs Logistics</dd>
-                <dd>Springs Events</dd>
-                <dd>SEO</dd>
+                <dd><a href="/services">Experiential Marketing </a></dd>
+                <dd><a href="/services" >Digital Marketing </a></dd>
+                <dd><a href="/services" >Smart Box/ Shared Office </a></dd>
+                <dd><a href="/services" >Springs Logistics </a></dd>
+                <dd><a href="/services" >Springs Events </a></dd>
+                <dd><a href="/services" >SEO </a></dd>
             </dl>
             <dl>
                 <dt>Company</dt>
-                <dd>about</dd>
-                <dd>team</dd>
-                <dd>portfolio</dd>
+                <dd> <a href="/about.html" >about </a></dd>
+                <dd> <a href="/services.html" >services</a></dd>
+                <dd> <a href="/portfolio.html" >portfolio </a></dd>
             </dl>
             <dl>
                 <dt>legal</dt>
@@ -374,7 +500,6 @@
         <p id="copyright"> Copyright &copy; <time id="year"></time> All Rights Reserved.</p>
     </footer>
 
-    <script src="./js/flickity.pkgd.min.js"></script>
 </body>
 
 </html>

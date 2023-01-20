@@ -1,3 +1,4 @@
+@import './variables.css';
 .testimonial {
   width: 100vw;
   height: 100vh;
@@ -8,8 +9,8 @@
 }
 
 .testimonial .pill {
-  background-color: hsl(356deg, 50%, 95%);
-  color: hsl(359deg, 58%, 45%);
+  background-color: var(--rouge-slider);
+  color: var(--rougue-full);
 }
 
 .testimonial__item-one {
@@ -46,7 +47,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: hsl(356deg, 50%, 95%);
+  background-color: var(--rouge-slider);
 }
 
 .carousel-container .carousel-cell blockquote {
@@ -59,7 +60,7 @@
   font-weight: 300;
   inline-size: 500px;
   word-wrap: break-word;
-  line-height: 25px;
+  line-height: calc(var(--line-sm) + 10px);
   position: relative;
   margin-bottom: 20px;
 }
@@ -73,11 +74,6 @@
   width: 500px;
   position: relative;
   left: -13rem;
-}
-
-#carouselImgCrop {
-  width: 350px;
-  height: 400px;
 }
 
 .carousel-container .carousel-cell #carousel__img-one {
@@ -100,29 +96,35 @@
   .testimonial__item-one {
     justify-content: space-around;
   }
+
   .testimonial__item-one p {
     font-size: 12px;
   }
+
   .carousel-container .carousel-cell {
     width: 70%;
     height: 75%;
     flex-direction: column;
   }
+
   .carousel-container .carousel-cell img {
     width: 300px;
     left: -25%;
   }
+
   .carousel-container .carousel-cell blockquote {
     left: 0px;
   }
+
   .carousel-container .carousel-cell blockquote p {
     font-size: 10px;
     inline-size: 250px;
-    line-height: 15px;
+    line-height: var(--line-sm);
   }
+
   .carousel-container .carousel-cell blockquote cite {
     font-size: 13px;
   }
 }
 
-/*# sourceMappingURL=carousel.css.map */
+/*# sourceMappingURL=carouse.css.map */

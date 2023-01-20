@@ -1,0 +1,382 @@
+/* global rules */
+* {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 39px;
+}
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 2.3rem;
+    line-height: 39px;
+  }
+}
+@media only screen and (max-width: 300px) {
+  h1 {
+    font-size: 2.3rem;
+    line-height: 39px;
+  }
+}
+
+h2 {
+  font-size: 2.3rem;
+  text-transform: capitalize;
+}
+@media only screen and (max-width: 600px) {
+  h2 {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 300px) {
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.navigation {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  overflow-y: hidden;
+}
+.navigation ul {
+  width: inherit;
+  height: inherit;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@media only screen and (max-width: 600px) {
+  .navigation {
+    display: none;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .navigation {
+    display: none;
+  }
+}
+
+.navigation .logo img {
+  width: 60px;
+}
+
+.navigation .nav-items {
+  width: 40%;
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navigation .nav-items a {
+  font-size: 1.5rem;
+  color: #000;
+  text-transform: capitalize;
+  transition: color 0.1s ease-out 0.4s;
+}
+.navigation .nav-items a:hover {
+  color: hsl(359deg, 58%, 45%);
+}
+
+.pill {
+  width: 140px;
+  height: 25px;
+  font-size: 12px;
+  background-color: hsla(239deg, 41%, 41%, 0.2);
+  border-radius: 30px;
+  color: hsl(239deg, 41%, 41%);
+  padding: 5px;
+  display: grid;
+  place-items: center;
+  text-transform: capitalize;
+}
+@media only screen and (max-width: 600px) {
+  .pill {
+    width: 140px;
+    height: 20px;
+    font-size: 8px;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .pill {
+    width: 140px;
+    height: 20px;
+    font-size: 8px;
+  }
+}
+
+.clients-nav {
+  width: 100%;
+  height: 150px;
+  display: grid;
+  place-items: center;
+  background-color: hsl(0deg, 0%, 98%);
+}
+.clients-nav ul {
+  width: 90%;
+  height: 90%;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(0deg, 0%, 98%);
+}
+@media only screen and (max-width: 600px) {
+  .clients-nav ul {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 30px;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .clients-nav ul {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .clients-nav {
+    width: 100%;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .clients-nav {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.footer {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+@media only screen and (max-width: 600px) {
+  .footer {
+    height: auto;
+    flex-direction: column;
+    padding-top: 30px;
+  }
+}
+
+.footer img {
+  width: 100px;
+}
+@media only screen and (max-width: 600px) {
+  .footer img {
+    width: 200px;
+  }
+}
+
+.footer-nav {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.footer-nav dl {
+  height: 200px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+@media only screen and (max-width: 600px) {
+  .footer-nav dl {
+    width: 100%;
+    height: 700px;
+    align-items: center;
+  }
+}
+.footer-nav dt {
+  font-weight: 700;
+  font-size: 15px;
+}
+.footer-nav dl dd {
+  text-transform: capitalize;
+}
+@media only screen and (max-width: 600px) {
+  .footer-nav dl dd {
+    inline-size: 250px;
+    word-wrap: break-word;
+    text-align: center;
+  }
+}
+.footer-nav dl dd a {
+  font-weight: 300;
+  font-size: 13.5px;
+  color: #000;
+  text-transform: capitalize;
+  transition: color 0.1s ease-out 0.5s;
+}
+.footer-nav dl dd a:hover {
+  color: hsl(239deg, 41%, 41%);
+}
+@media only screen and (max-width: 600px) {
+  .footer-nav {
+    width: 100%;
+    display: grid;
+    place-items: center;
+  }
+}
+
+.footer .contact-details {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 25%;
+}
+.footer .contact-details li {
+  margin-top: 10px;
+}
+.footer .contact-details li p {
+  font-size: 13px;
+  inline-size: 300px;
+  word-wrap: break-word;
+  text-align: right;
+}
+@media only screen and (max-width: 600px) {
+  .footer .contact-details li p {
+    text-align: center;
+  }
+}
+.footer .contact-details li a {
+  font-size: 14px;
+  inline-size: 300px;
+  word-wrap: break-word;
+  text-align: right;
+  line-height: 35px;
+  color: #000;
+}
+@media only screen and (max-width: 600px) {
+  .footer .contact-details li a {
+    text-align: center;
+  }
+}
+.footer .contact-details #social a {
+  color: #000;
+  margin-left: 10px;
+}
+.footer .contact-details #address p {
+  line-height: 31px;
+}
+@media only screen and (max-width: 600px) {
+  .footer .contact-details {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.footer #copyright {
+  font-size: 15px;
+  position: absolute;
+  top: 90%;
+  left: 40%;
+}
+@media only screen and (max-width: 600px) {
+  .footer #copyright {
+    top: 98%;
+    left: 25%;
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .footer #copyright {
+    top: 98%;
+    left: 25%;
+    font-size: 13px;
+  }
+}
+
+.mobile-nav {
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  .mobile-nav {
+    display: none;
+    background-color: red;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 5;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .mobile-nav {
+    display: none;
+    background-color: red;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 5;
+  }
+}
+
+.hamburger {
+  display: none;
+  width: 26px;
+  height: 40px;
+  background-color: blue;
+}
+@media only screen and (max-width: 600px) {
+  .hamburger {
+    /* display: initial; */
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .hamburger {
+    /* display: initial; */
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+/* ---------------- */
+
+/*# sourceMappingURL=global.css.map */

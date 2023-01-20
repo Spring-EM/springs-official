@@ -1,0 +1,20 @@
+$rouge-full: hsla(359, 58%, 45%);
+$rouge: hsla(359, 58%, 45%, .1);
+$rouge-surface: hsla(359, 58%, 45%, 0.2);
+$rouge-slider: hsla(356, 50%, 95%, 1);
+$azul: hsla(0, 0%, 96%, 1);
+$azul-deep: hsla(239, 41%, 41%, 0.2);
+$azul-deep-nopac: hsla(239, 41%, 41%, 1);
+$azul-section: hsla(0, 0%, 98%, 1);
+$azul-section-surface: hsla(0, 0%, 95%, 1);
+$azul-surface-deep: hsla(239, 41%, 41%, 0.5);
+$shadow: 0px 3.43529px 17.1765px rgba(0, 0, 0, 0.1);
+$glass: hsla(0, 0%, 100%, 0.8);
+$line: 31px;
+$line-sm: 15px;
+
+
+//media queries
+
+$media-300-down: "only screen and (max-width: 300px)";
+$media-600-down: "only screen and (max-width: 600px)";
