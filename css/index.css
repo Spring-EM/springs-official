@@ -28,6 +28,7 @@
 .index-hero article h1 {
   inline-size: 450px;
   word-wrap: break-word;
+  text-transform: capitalize;
 }
 
 .index-hero article p {
@@ -473,6 +474,7 @@
     width: 100%;
   }
   .index-hero article h1 {
+    text-transform: capitalize;
     /* text-align: center; */
     line-height: 35px;
     inline-size: 300px;

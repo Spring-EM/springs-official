@@ -33,6 +33,7 @@
 .index-hero article h1{
     inline-size: 450px;
     word-wrap: break-word;
+    text-transform: capitalize;
 }
 
 .index-hero article p{
@@ -483,6 +484,7 @@
     }
 
     .index-hero article h1{
+        text-transform: capitalize;
         /* text-align: center; */
         line-height: calc(vars.$line-sm + 20px);
         inline-size: 300px;
