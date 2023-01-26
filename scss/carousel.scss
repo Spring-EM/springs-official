@@ -29,6 +29,9 @@
 .testimonial__item-one p{
     font-size: 18px;
     text-transform: capitalize;
+    @media #{vars.$media-600-down}{
+        font-size: 12px;
+    }
 }
 
 .testimonial__item-two{
@@ -52,11 +55,20 @@
     justify-content: space-around;
     align-items: center;
     background-color: vars.$rouge-slider;
+    @media #{vars.$media-600-down}{
+        width:70%;
+        height: 75%;
+        flex-direction: column;
+    }
 }
 
 .carousel-container .carousel-cell blockquote{
     position: relative;
     left: -50px;
+    @media #{vars.$media-600-down}{
+        left: 0px;
+
+    }
 }
 
 .carousel-container .carousel-cell blockquote p{
@@ -67,17 +79,29 @@
     line-height: calc(vars.$line-sm + 10px);
     position: relative;
     margin-bottom: 20px;
+    @media #{vars.$media-600-down}{
+        font-size: 10px;
+        inline-size: 250px;
+        line-height: vars.$line-sm;
+    }
 }
 
 .carousel-container .carousel-cell blockquote cite{
     font-size: 20px;
     font-weight: 600;
+    @media #{vars.$media-600-down}{
+        font-size: 13px;
+    }
 }
 
 .carousel-container .carousel-cell img{
     width: 500px;
     position: relative;
     left: -13rem;
+    @media #{vars.$media-600-down}{
+        width: 300px;
+        left: -25%;
+    }
 }
 
 #carouselImgCrop{
@@ -96,43 +120,4 @@
 }
 .carousel-container .carousel-cell #carousel__img-four{
     clip-path: url(#carouselCellImgFour);
-}
-
-@media only screen and (max-width: 600px){
-    .testimonial__item-one{
-        
-    }
-
-    .testimonial__item-one p{
-        font-size: 12px;
-    }
-
-    .carousel-container .carousel-cell{
-        width:70%;
-        height: 75%;
-        flex-direction: column;
-    }
-
-    .carousel-container .carousel-cell img{
-        width: 300px;
-        left: -25%;
-    }
-
-    .carousel-container .carousel-cell blockquote{
-        left: 0px;
-    }
-
-    .carousel-container .carousel-cell blockquote p{
-        font-size: 10px;
-        inline-size: 250px;
-        line-height: vars.$line-sm;
-    }
-
-    .carousel-container .carousel-cell blockquote cite{
-        font-size: 13px;
-    }
-}
-
-@media only screen and (max-width: 300px){
-
 }
