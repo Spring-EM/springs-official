@@ -21,6 +21,9 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    @media #{vars.$media-600-down}{
+        justify-content: space-around;
+    }
 }
 
 .testimonial__item-one p{
@@ -30,7 +33,7 @@
 
 .testimonial__item-two{
     width: 100%;
-    height: 70%;
+    height: 80%;
 }
 
 .carousel-container{
@@ -97,7 +100,7 @@
 
 @media only screen and (max-width: 600px){
     .testimonial__item-one{
-        justify-content: space-around;
+        
     }
 
     .testimonial__item-one p{
