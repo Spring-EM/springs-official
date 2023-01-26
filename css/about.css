@@ -46,7 +46,17 @@
   align-items: center;
 }
 #hero-grid .grid-figure_two img {
-  width: 220px;
+  width: 150px;
+  position: relative;
+  z-index: 2;
+}
+#hero-grid .grid-figure_two figcaption {
+  position: relative;
+  z-index: 2;
+}
+#hero-grid .grid-figure_two figcaption p {
+  font-size: 1.4rem;
+  font-weight: 600;
 }
 #hero-grid .grid-figure_three {
   grid-area: 2/2/3/3;
@@ -56,6 +66,12 @@
 }
 #hero-grid .grid-figure_three img {
   width: 150px;
+  position: relative;
+  z-index: 2;
+}
+#hero-grid .grid-figure_three figcaption {
+  position: relative;
+  z-index: 2;
 }
 #hero-grid .grid-figure_four {
   grid-area: 3/2/4/3;
@@ -65,6 +81,12 @@
 }
 #hero-grid .grid-figure_four img {
   width: 150px;
+  position: relative;
+  z-index: 2;
+}
+#hero-grid .grid-figure_four figcaption {
+  position: relative;
+  z-index: 2;
 }
 
 #hero-grid .grid-figure_two,
@@ -72,6 +94,29 @@
 #hero-grid .grid-figure_four {
   width: 350px;
   display: flex;
+  position: relative;
+}
+
+#hero-grid .grid-figure_two .img-wrapper,
+#hero-grid .grid-figure_three .img-wrapper,
+#hero-grid .grid-figure_four .img-wrapper {
+  position: relative;
+  z-index: 3;
+}
+
+#hero-grid .grid-figure_two .img-wrapper {
+  width: 100%;
+}
+#hero-grid .grid-figure_two .img-wrapper:before {
+  content: "";
+  position: absolute;
+  top: 50px;
+  right: 70px;
+  width: 400px;
+  height: 100px;
+  border-radius: 5px;
+  background-color: red;
+  z-index: 0;
 }
 
 .about-content {

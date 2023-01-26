@@ -50,7 +50,17 @@
         justify-content: space-between;
         align-items: center;
         img{
-            width: 220px;
+            width: 150px;
+            position: relative;
+            z-index: 2;
+        }
+        figcaption{
+            position: relative;
+            z-index: 2;
+            p{
+                font-size: 1.4rem;
+                font-weight: 600;
+            }
         }
     }
     .grid-figure_three{
@@ -60,6 +70,12 @@
         align-items: center;
         img{
             width: 150px;
+            position: relative;
+            z-index: 2;
+        }
+        figcaption{
+            position: relative;
+            z-index: 2;
         }
     }
     .grid-figure_four{
@@ -69,6 +85,12 @@
         flex-direction: row-reverse;
         img{
             width: 150px;
+            position: relative;
+            z-index: 2;
+        }
+        figcaption{
+            position: relative;
+            z-index: 2;
         }
     }
 }
@@ -80,11 +102,30 @@
 #hero-grid .grid-figure_four{
     width: 350px;
     display: flex;
+    position: relative;
+}
+
+#hero-grid .grid-figure_two .img-wrapper,
+#hero-grid .grid-figure_three .img-wrapper,
+#hero-grid .grid-figure_four .img-wrapper{
+    position: relative;
+    z-index: 3;
 }
 
 
-#hero-grid .grid-figure_four{
-
+#hero-grid .grid-figure_two .img-wrapper{
+    width: 100%;
+    &:before{
+        content: '';
+        position: absolute;
+        top: 50px;
+        right: 70px;
+        width: 400px;
+        height: 100px;
+        border-radius: 5px;
+        background-color: red;
+        z-index: 0;
+    }
 }
 
 
