@@ -9,7 +9,7 @@
 @media only screen and (max-width: 600px) {
   .services-hero {
     flex-direction: column;
-    height: 150vh;
+    height: 180vh;
   }
 }
 
@@ -120,6 +120,7 @@
 }
 @media only screen and (max-width: 600px) {
   #services-body-content {
+    height: 200vh;
     padding-top: 50px;
   }
 }
