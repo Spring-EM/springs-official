@@ -318,7 +318,7 @@ button {
 @media only screen and (max-width: 600px) {
   .footer #copyright {
     top: 98%;
-    left: 25%;
+    left: 18%;
     font-size: 13px;
   }
 }
