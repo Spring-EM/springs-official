@@ -8,7 +8,7 @@
 }
 @media only screen and (max-width: 600px) {
   .about-hero {
-    height: 150vh;
+    height: 200vh;
     flex-direction: column;
   }
 }
@@ -18,6 +18,11 @@
   top: 100px;
   left: 200px;
 }
+@media only screen and (max-width: 600px) {
+  .about-hero article {
+    left: 20px;
+  }
+}
 
 .about-hero > article h1 {
   inline-size: 350px;
@@ -26,6 +31,12 @@
   line-height: 3.4rem;
   text-transform: capitalize;
 }
+@media only screen and (max-width: 600px) {
+  .about-hero > article h1 {
+    font-size: 2.4rem;
+  }
+}
+
 .about-hero article h1 {
   margin-top: 30px;
 }
@@ -37,6 +48,14 @@
   display: flex;
   position: relative;
 }
+@media only screen and (max-width: 600px) {
+  #hero-grid .grid-figure_two,
+  #hero-grid .grid-figure_three,
+  #hero-grid .grid-figure_four {
+    height: 300px;
+    width: 100%;
+  }
+}
 
 #hero-grid {
   height: 100%;
@@ -46,6 +65,14 @@
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   position: relative;
+}
+@media only screen and (max-width: 600px) {
+  #hero-grid {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 #hero-grid .grid-figure_one {
   width: 300px;
@@ -57,12 +84,20 @@
 }
 @media only screen and (max-width: 600px) {
   #hero-grid .grid-figure_one {
+    width: 100%;
+    height: 300px;
     grid-area: none;
+    display: block;
   }
 }
 #hero-grid .grid-figure_one img {
   position: relative;
   z-index: 2;
+}
+@media only screen and (max-width: 600px) {
+  #hero-grid .grid-figure_one img {
+    width: 100px;
+  }
 }
 #hero-grid .grid-figure_one figcaption {
   position: relative;
@@ -86,12 +121,18 @@
 @media only screen and (max-width: 600px) {
   #hero-grid .grid-figure_two {
     grid-area: none;
+    display: block;
   }
 }
 #hero-grid .grid-figure_two img {
   width: 150px;
   position: relative;
   z-index: 2;
+}
+@media only screen and (max-width: 600px) {
+  #hero-grid .grid-figure_two img {
+    width: 100px;
+  }
 }
 #hero-grid .grid-figure_two figcaption {
   position: relative;
@@ -111,12 +152,18 @@
 @media only screen and (max-width: 600px) {
   #hero-grid .grid-figure_three {
     grid-area: none;
+    display: block;
   }
 }
 #hero-grid .grid-figure_three img {
   width: 150px;
   position: relative;
   z-index: 2;
+}
+@media only screen and (max-width: 600px) {
+  #hero-grid .grid-figure_three img {
+    width: 100px;
+  }
 }
 #hero-grid .grid-figure_three figcaption {
   position: relative;
@@ -135,12 +182,18 @@
 @media only screen and (max-width: 600px) {
   #hero-grid .grid-figure_four {
     grid-area: none;
+    display: block;
   }
 }
 #hero-grid .grid-figure_four img {
   width: 150px;
   position: relative;
   z-index: 2;
+}
+@media only screen and (max-width: 600px) {
+  #hero-grid .grid-figure_four img {
+    width: 100px;
+  }
 }
 #hero-grid .grid-figure_four figcaption {
   position: relative;
@@ -149,14 +202,6 @@
 #hero-grid .grid-figure_four figcaption p {
   font-size: 1.8rem;
   font-weight: 600;
-}
-@media only screen and (max-width: 600px) {
-  #hero-grid {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-  }
 }
 
 #hero-grid .grid-figure_two .img-wrapper,
@@ -180,6 +225,15 @@
   background-color: hsla(359deg, 58%, 45%, 0.1);
   z-index: 2;
 }
+@media only screen and (max-width: 600px) {
+  #hero-grid .grid-figure_two .img-wrapper:before {
+    content: none;
+    background-color: none;
+    position: none;
+    width: none;
+    height: none;
+  }
+}
 
 #hero-grid .grid-figure_three .img-wrapper {
   width: 100%;
@@ -194,6 +248,15 @@
   border-radius: 5px;
   background-color: hsl(239deg, 41%, 41%);
   z-index: 0;
+}
+@media only screen and (max-width: 600px) {
+  #hero-grid .grid-figure_three .img-wrapper:before {
+    content: none;
+    background-color: none;
+    position: none;
+    width: none;
+    height: none;
+  }
 }
 
 #hero-grid .grid-figure_four .img-wrapper {
@@ -210,6 +273,15 @@
   border-radius: 5px;
   background-color: hsla(239deg, 41%, 41%, 0.5);
   z-index: 0;
+}
+@media only screen and (max-width: 600px) {
+  #hero-grid .grid-figure_four .img-wrapper:after {
+    content: none;
+    background-color: none;
+    position: none;
+    width: none;
+    height: none;
+  }
 }
 
 #hero-grid .grid-figure_one .img-wrapper {
@@ -228,6 +300,15 @@
   border-radius: 5px;
   background-color: hsl(359deg, 58%, 45%);
   z-index: 0;
+}
+@media only screen and (max-width: 600px) {
+  #hero-grid .grid-figure_one .img-wrapper:before {
+    content: none;
+    background-color: none;
+    position: none;
+    width: none;
+    height: none;
+  }
 }
 
 .about-content {

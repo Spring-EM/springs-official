@@ -8,7 +8,7 @@
     justify-content: space-between;
     align-items: flex-start;
     @media #{vars.$media-600-down}{
-        height: 150vh;
+        height: 200vh;
         flex-direction: column;
     }
 }
@@ -18,6 +18,9 @@
     position: relative;
     top: 100px;
     left: 200px;
+    @media #{vars.$media-600-down}{
+        left: 20px;
+    }
 }
 
 .about-hero > article h1 {
@@ -27,7 +30,7 @@
     line-height: 3.4rem;
     text-transform: capitalize;
     @media #{vars.$media-600-down}{
-        // inline-size:
+        font-size: 2.4rem;
     }
 }
 
@@ -42,6 +45,10 @@
     width: 350px;
     display: flex;
     position: relative;
+    @media #{vars.$media-600-down}{
+        height: 300px;
+        width: 100%;
+    }
 }
 
 #hero-grid{
@@ -52,7 +59,13 @@
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     position: relative;
+    @media #{vars.$media-600-down}{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column-reverse;
 
+    }
     .grid-figure_one{
         width: 300px;
         display: flex;
@@ -61,11 +74,17 @@
         justify-content: space-between;
         align-items: center;
         @media #{vars.$media-600-down}{
+            width: 100%;
+            height: 300px;
             grid-area: none;
+            display: block;
         }
         img{
             position: relative;
             z-index: 2;
+            @media #{vars.$media-600-down}{
+                width: 100px;
+            }
         }
         figcaption{
             position: relative;
@@ -88,11 +107,15 @@
         align-items: center;
         @media #{vars.$media-600-down}{
             grid-area: none;
+            display: block
         }
         img{
             width: 150px;
             position: relative;
             z-index: 2;
+            @media #{vars.$media-600-down}{
+                width: 100px;
+            }
         }
         figcaption{
             position: relative;
@@ -112,11 +135,15 @@
         align-items: center;
         @media #{vars.$media-600-down}{
             grid-area: none;
+            display: block;
         }
         img{
             width: 150px;
             position: relative;
             z-index: 2;
+            @media #{vars.$media-600-down}{
+                width: 100px;
+            }
         }
         figcaption{
             position: relative;
@@ -134,11 +161,15 @@
         flex-direction: row-reverse;
         @media #{vars.$media-600-down}{
             grid-area: none;
+            display: block;
         }
         img{
             width: 150px;
             position: relative;
             z-index: 2;
+            @media #{vars.$media-600-down}{
+                width: 100px;
+            }
         }
         figcaption{
             position: relative;
@@ -149,12 +180,7 @@
             }
         }
     }
-    @media #{vars.$media-600-down}{
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
-    }
+    
 }
 
 
@@ -179,6 +205,13 @@
         border-radius: 5px;
         background-color: vars.$rouge;
         z-index: 2;
+        @media #{vars.$media-600-down}{
+            content: none;
+            background-color: none;
+            position: none;
+            width: none;
+            height: none;
+        }
     }
 }
 
@@ -195,6 +228,13 @@
         border-radius: 5px;
         background-color: vars.$azul-deep-nopac;
         z-index: 0;
+        @media #{vars.$media-600-down}{
+            content: none;
+            background-color: none;
+            position: none;
+            width: none;
+            height: none;
+        }
     }
 }
 
@@ -211,6 +251,13 @@
         border-radius: 5px;
         background-color: vars.$azul-surface-deep;
         z-index: 0;
+        @media #{vars.$media-600-down}{
+            content: none;
+            background-color: none;
+            position: none;
+            width: none;
+            height: none;
+        }
     }
 }
 
@@ -229,6 +276,13 @@
         border-radius: 5px;
         background-color: vars.$rouge-full;
         z-index: 0;
+        @media #{vars.$media-600-down}{
+            content: none;
+            background-color: none;
+            position: none;
+            width: none;
+            height: none;
+        }
     }
 }
 
