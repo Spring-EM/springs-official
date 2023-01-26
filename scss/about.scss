@@ -63,6 +63,8 @@
         width: 100%;
         height: auto;
         display: flex;
+        justify-content: center;
+        align-items: center;
         flex-direction: column-reverse;
 
     }
@@ -78,6 +80,7 @@
             height: 300px;
             grid-area: none;
             display: block;
+            // background-color: vars.$rouge-full;
         }
         img{
             position: relative;
@@ -107,7 +110,8 @@
         align-items: center;
         @media #{vars.$media-600-down}{
             grid-area: none;
-            display: block
+            display: block;
+            // background-color: vars.$rouge;
         }
         img{
             width: 150px;
@@ -136,6 +140,7 @@
         @media #{vars.$media-600-down}{
             grid-area: none;
             display: block;
+            // background-color: vars.$azul-deep-nopac;
         }
         img{
             width: 150px;
@@ -162,6 +167,7 @@
         @media #{vars.$media-600-down}{
             grid-area: none;
             display: block;
+            // background-color: vars.$azul-surface-deep;
         }
         img{
             width: 150px;
@@ -193,6 +199,16 @@
 }
 
 
+#hero-grid .grid-figure{
+    @media #{vars.$media-600-down}{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 20px;
+    }
+}
+
+
 #hero-grid .grid-figure_two .img-wrapper{
     width: 100%;
     &:before{
@@ -212,6 +228,9 @@
             width: none;
             height: none;
         }
+    }
+    @media #{vars.$media-600-down}{
+        background-color: vars.$rouge;
     }
 }
 
@@ -236,6 +255,9 @@
             height: none;
         }
     }
+    @media #{vars.$media-600-down}{
+        background-color: vars.$azul-deep-nopac;
+    }
 }
 
 #hero-grid .grid-figure_four .img-wrapper{
@@ -259,11 +281,14 @@
             height: none;
         }
     }
+    @media #{vars.$media-600-down}{
+        background-color: vars.$azul-surface-deep;
+    }
 }
 
 #hero-grid .grid-figure_one .img-wrapper{
     width: 100%;
-    z-index: 3;
+    z-index: 1;
     position: relative;
     left: 40px;
     &:before{
@@ -284,6 +309,9 @@
             height: none;
         }
     }
+    @media #{vars.$media-600-down}{
+        background-color: vars.$rouge-full;
+    }
 }
 
 
@@ -293,6 +321,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-top: 30px;
     @media #{vars.$media-600-down}{
         flex-direction: column;
     }
