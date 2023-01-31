@@ -72,11 +72,17 @@
   position: relative;
   z-index: 1;
   cursor: pointer;
+  transition: background-color 0.3s ease-out, color 0.3s ease-out;
 }
 @media only screen and (max-width: 425px) {
   .index-hero article button {
     z-index: 0;
   }
+}
+
+#cta:hover {
+  background-color: hsla(359deg, 58%, 45%, 0.2);
+  color: hsl(239deg, 41%, 41%);
 }
 
 .index-hero img {
