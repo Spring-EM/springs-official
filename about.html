@@ -15,25 +15,29 @@
     <!-- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"> -->
     <script src="https://kit.fontawesome.com/dc9d65de73.js" crossorigin="anonymous"></script>
     <script src="./js/animate.js" defer></script>
+    <script src="./js/main.js" defer></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" defer></script> -->
 </head>
 
 <body>
     <nav class="navigation">
-        <ul>
-            <li class="logo">
-                <a href="index.html">
-                    <img src="/assets/images/springs-logo.png" alt="logo" />
-                </a>
-            </li>
-            <li class="nav-items">
-                <a href="portfolio.html">portfolio</a>
-                <a href="about.html">about us</a>
-                <a href="services.html">services</a>
-                <a href="contact.html">contact</a>
-            </li>
-        </ul>
-    </nav>
+        <div class="logo">
+            <img src="./assets/images/springs-logo.png" alt="springs logo">
+        </div>
+        <div class="hamburger">
+            <div class="line bun"></div>
+            <div class="line meat"></div>
+            <div class="line bun"></div>
+        </div>
+        <div class="nav-items">
+            <ul class="nav-item-list">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+       </nav>
 
     <div class="hamburger"></div>
     <nav class="mobile-overlay">
