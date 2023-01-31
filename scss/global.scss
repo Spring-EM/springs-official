@@ -68,17 +68,35 @@ button{
         display: flex;
         justify-content: space-around;
         align-items: center;
+        @media #{vars.$media-480-down}{
+            display: block;
+            width: 100%;
+            height: 100px;
+            
+        }
     }
     @media #{vars.$media-480-down}{
-        display: none;
+        display: initial;
+        width: 100%;
+        height: 100px;
+        position: fixed;
+        top: 0;
+        background: #fff;
+        z-index: 3;
+        margin-bottom: 80px;
     }
     @media #{vars.$media-300-down}{
         display: none;
     }
 }
 
-.navigation .logo img{
-    width: 60px;
+.navigation .logo{
+    @media #{vars.$media-480-down}{
+        display: inline-block;
+    }
+    img{
+        width: 100px;
+    }
 }
 
 .navigation .nav-items{
@@ -87,16 +105,66 @@ button{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media #{vars.$media-480-down}{
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-around;
+        position: fixed;
+        overflow: hidden;
+        background-color: vars.$azul-deep-nopac;
+        max-height: 0;
+        transition: max-height .5s ease-out;
+        z-index: 10 !important;
+    }
     a{
         font-size: 1.5rem;
         color: #000;
         text-transform: capitalize;
         transition: color .1s ease-out .4s;
+        @media #{vars.$media-480-down}{
+            color: #fff;
+            font-size: 2.3rem;
+            z-index: 10 !important;
+        }
         &:hover{
             color: vars.$rouge-full;
         }
     }
 }
+
+.navigation .menu{
+    display: none;
+    @media #{vars.$media-480-down}{
+        display: initial;
+    }
+}
+
+
+.navigation .menu .burger{
+    @media #{vars.$media-480-down}{
+        width: 60px;
+        height: 30px;
+        float: right;
+        position: relative;
+        left: -20px;
+        top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        cursor: pointer;
+    }
+}
+
+.navigation .menu .burger > span{
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: black;
+}
+
+
 
 
 .pill{

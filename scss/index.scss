@@ -10,15 +10,19 @@
     grid-template-columns: repeat(2, 1fr);
     place-items: center;
     position: relative;
+    @media #{vars.$media-480-down}{
+        z-index: 0;
+        margin-top: 50px;
+    }
 }
 
 .index-hero #blue-accent{
     width: 400px;
     height: 665px;
     position: absolute;
-        top: 0;
-        left: 65%;
-        background-color: vars.$azul-section-surface;
+    top: 0;
+    left: 65%;
+    background-color: vars.$azul-section-surface;
 }
 
 .index-hero article{
@@ -28,18 +32,27 @@
     justify-content: space-around;
     align-items: baseline;
     position: relative;
+    @media #{vars.$media-480-down}{
+        z-index: 0;
+    }
 }
 
 .index-hero article h1{
     inline-size: 450px;
     word-wrap: break-word;
     text-transform: capitalize;
+    @media #{vars.$media-480-down}{
+        z-index: 0;
+    }
 }
 
 .index-hero article p{
     font-size: 1.5rem;
     inline-size: 400px;
     word-wrap: break-word;
+    @media #{vars.$media-480-down}{
+        z-index: 0;
+    }
 }
 
 .index-hero article button{
@@ -56,6 +69,9 @@
     position: relative;
     z-index: 1;
     cursor: pointer;
+    @media #{vars.$media-480-down}{
+        z-index: 0;
+    }
 }
 
 .index-hero img{
@@ -65,6 +81,9 @@
     left: -80px;
     top: 50px;
     z-index: 2;
+    @media #{vars.$media-480-down}{
+        z-index: 0;
+    }
 }
 
 .index-hero #heroImageCrop{
@@ -454,7 +473,7 @@
     width: 100%;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 480px){
     #blue-accent{
         display: none;
     }
