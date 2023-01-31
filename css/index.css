@@ -306,7 +306,7 @@
   padding: 25px;
   margin-bottom: 5px;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
   .card__two-icons {
     margin-left: 10px;
   }
@@ -316,7 +316,7 @@
   font-size: 1.8rem;
   margin-bottom: 10px;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
   .flex-child-two .card-two article h2 {
     margin-left: 20px;
   }
@@ -329,7 +329,7 @@
   word-wrap: break-word;
   transition: 0.2s ease-in;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
   .flex-child-two .card-two article p {
     padding-left: 20px;
   }

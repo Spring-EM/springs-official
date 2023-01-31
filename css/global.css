@@ -1,7 +1,7 @@
 /* global rules */
 * {
   box-sizing: border-box;
-  font-family: "Inter", sans-serif;
+  font-family: "Work", sans-serif;
   padding: 0;
   margin: 0;
   overflow-x: hidden;
@@ -16,7 +16,7 @@ h1 {
   font-size: 3rem;
   line-height: 39px;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
   h1 {
     font-size: 2.3rem;
     line-height: 39px;
@@ -33,7 +33,7 @@ h2 {
   font-size: 2.3rem;
   text-transform: capitalize;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
   h2 {
     font-size: 2rem;
   }
@@ -74,7 +74,7 @@ button {
   justify-content: space-around;
   align-items: center;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
   .navigation {
     display: none;
   }
@@ -118,7 +118,7 @@ button {
   place-items: center;
   text-transform: capitalize;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
   .pill {
     width: 140px;
     height: 20px;
@@ -149,7 +149,7 @@ button {
   align-items: center;
   background-color: hsl(0deg, 0%, 98%);
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
   .clients-nav ul {
     width: 100%;
     height: 500px;
@@ -168,7 +168,7 @@ button {
     padding-bottom: 10px;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
   .clients-nav {
     width: 100%;
     height: auto;
@@ -189,7 +189,7 @@ button {
   align-items: center;
   position: relative;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
   .footer {
     height: auto;
     flex-direction: column;
@@ -200,7 +200,7 @@ button {
 .footer img {
   width: 100px;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
   .footer img {
     width: 200px;
   }
@@ -219,7 +219,7 @@ button {
   justify-content: space-around;
   align-items: flex-start;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
   .footer-nav dl {
     width: 100%;
     height: 700px;
@@ -233,7 +233,7 @@ button {
 .footer-nav dl dd {
   text-transform: capitalize;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
   .footer-nav dl dd {
     inline-size: 250px;
     word-wrap: break-word;
@@ -250,7 +250,7 @@ button {
 .footer-nav dl dd a:hover {
   color: hsl(239deg, 41%, 41%);
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
   .footer-nav {
     width: 100%;
     display: grid;
@@ -274,7 +274,7 @@ button {
   word-wrap: break-word;
   text-align: right;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
   .footer .contact-details li p {
     text-align: center;
   }
@@ -287,7 +287,7 @@ button {
   line-height: 35px;
   color: #000;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
   .footer .contact-details li a {
     text-align: center;
   }
@@ -299,7 +299,7 @@ button {
 .footer .contact-details #address p {
   line-height: 31px;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
   .footer .contact-details {
     width: 100%;
     height: 500px;
@@ -315,7 +315,7 @@ button {
   top: 90%;
   left: 40%;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
   .footer #copyright {
     top: 98%;
     left: 18%;
@@ -333,7 +333,7 @@ button {
 .mobile-nav {
   display: none;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
   .mobile-nav {
     display: none;
     background-color: red;
@@ -360,7 +360,7 @@ button {
   height: 40px;
   background-color: blue;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
   .hamburger {
     /* display: initial; */
     position: absolute;

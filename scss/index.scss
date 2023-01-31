@@ -313,7 +313,7 @@
     background-color: vars.$rouge-slider;
     padding: 25px;
     margin-bottom: 5px;
-    @media #{vars.$media-600-down}{
+    @media #{vars.$media-480-down}{
         margin-left: 10px;
     }
 }
@@ -322,7 +322,7 @@
 .flex-child-two .card-two article h2{
     font-size: 1.8rem;
     margin-bottom: 10px;
-    @media #{vars.$media-600-down}{
+    @media #{vars.$media-480-down}{
         margin-left: 20px;
     }
 }
@@ -333,7 +333,7 @@
         inline-size: 300px;
         word-wrap: break-word;
         transition: .2s ease-in;
-        @media #{vars.$media-600-down}{
+        @media #{vars.$media-480-down}{
             padding-left: 20px;
         }
 }

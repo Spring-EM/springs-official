@@ -7,7 +7,7 @@
   place-items: center;
   position: relative;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
   .contact-header {
     display: flex;
     flex-direction: column;
@@ -21,7 +21,7 @@
   align-items: start;
   height: 50%;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
   .contact-header article {
     height: 500px;
   }
@@ -78,7 +78,7 @@
   border-radius: 10px;
   z-index: 1;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
   .contact-header .contact-image-accent {
     display: none;
   }
@@ -99,7 +99,7 @@
   align-items: center;
   position: relative;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
   #contact-main-content {
     flex-direction: column;
   }
@@ -110,7 +110,7 @@
   position: relative;
   z-index: 2;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
   #contact-main-content img:first-child {
     width: 300px;
     height: 300px;
@@ -127,7 +127,7 @@
   width: 250px;
   height: 350px;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
   #contactContentMask {
     width: 200px;
     height: 280px;
@@ -144,7 +144,7 @@
   top: 130px;
   z-index: 1;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
   #contact-main-content #contact-content-image-accent {
     display: none;
   }
@@ -160,7 +160,7 @@
   position: relative;
   left: 100px;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
   #contact-main-content article {
     width: 100%;
     left: 0px;
@@ -174,7 +174,7 @@
   margin-bottom: 20px;
   font-weight: 600;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
   #contact-main-content article > p {
     inline-size: 300px;
     word-wrap: break-word;
