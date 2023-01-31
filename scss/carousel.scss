@@ -21,7 +21,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    @media #{vars.$media-480-down}{
+    @media #{vars.$media-mobile-l}{
         justify-content: space-around;
     }
 }
@@ -29,7 +29,7 @@
 .testimonial__item-one p{
     font-size: 18px;
     text-transform: capitalize;
-    @media #{vars.$media-480-down}{
+    @media #{vars.$media-mobile-l}{
         inline-size: 300px;
         word-wrap: break-word;
         font-size: 12px;
@@ -57,7 +57,7 @@
     justify-content: space-around;
     align-items: center;
     background-color: vars.$rouge-slider;
-    @media #{vars.$media-480-down}{
+    @media #{vars.$media-mobile-l}{
         width:70%;
         height: 75%;
         flex-direction: column;
@@ -67,7 +67,7 @@
 .carousel-container .carousel-cell blockquote{
     position: relative;
     left: -50px;
-    @media #{vars.$media-480-down}{
+    @media #{vars.$media-mobile-l}{
         left: 0px;
 
     }
@@ -81,7 +81,7 @@
     line-height: calc(vars.$line-sm + 10px);
     position: relative;
     margin-bottom: 20px;
-    @media #{vars.$media-480-down}{
+    @media #{vars.$media-mobile-l}{
         font-size: 10px;
         inline-size: 250px;
         line-height: vars.$line-sm;
@@ -91,7 +91,7 @@
 .carousel-container .carousel-cell blockquote cite{
     font-size: 20px;
     font-weight: 600;
-    @media #{vars.$media-480-down}{
+    @media #{vars.$media-mobile-l}{
         font-size: 13px;
     }
 }
@@ -100,7 +100,7 @@
     width: 500px;
     position: relative;
     left: -13rem;
-    @media #{vars.$media-480-down}{
+    @media #{vars.$media-mobile-l}{
         width: 300px;
         left: -25%;
     }

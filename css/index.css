@@ -6,7 +6,7 @@
   place-items: center;
   position: relative;
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 425px) {
   .index-hero {
     z-index: 0;
     margin-top: 50px;
@@ -30,7 +30,7 @@
   align-items: baseline;
   position: relative;
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 425px) {
   .index-hero article {
     z-index: 0;
   }
@@ -41,7 +41,7 @@
   word-wrap: break-word;
   text-transform: capitalize;
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 425px) {
   .index-hero article h1 {
     z-index: 0;
   }
@@ -52,7 +52,7 @@
   inline-size: 400px;
   word-wrap: break-word;
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 425px) {
   .index-hero article p {
     z-index: 0;
   }
@@ -73,7 +73,7 @@
   z-index: 1;
   cursor: pointer;
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 425px) {
   .index-hero article button {
     z-index: 0;
   }
@@ -87,7 +87,7 @@
   top: 50px;
   z-index: 2;
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 425px) {
   .index-hero img {
     z-index: 0;
   }
@@ -337,7 +337,7 @@
   padding: 25px;
   margin-bottom: 5px;
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 425px) {
   .card__two-icons {
     margin-left: 10px;
   }
@@ -347,7 +347,7 @@
   font-size: 1.8rem;
   margin-bottom: 10px;
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 425px) {
   .flex-child-two .card-two article h2 {
     margin-left: 20px;
   }
@@ -360,7 +360,7 @@
   word-wrap: break-word;
   transition: 0.2s ease-in;
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 425px) {
   .flex-child-two .card-two article p {
     padding-left: 20px;
   }

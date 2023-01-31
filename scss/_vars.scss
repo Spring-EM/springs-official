@@ -17,5 +17,7 @@ $mobile-m-with: 4rem;
 
 //media queries
 
-$media-300-down: "only screen and (max-width: 300px)";
-$media-480-down: "only screen and (max-width: 480px)";
+$media-mobile-s: "only screen and (max-width: 320px)";
+$media-mobile-m: "only screen and (max-width: 375px)";
+$media-mobile-l: "only screen and (max-width: 425px)";
+$media-tab: "only screen and (max-width: 768px)";
