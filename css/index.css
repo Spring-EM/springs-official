@@ -241,6 +241,10 @@
 
 .about article button {
   color: hsl(239deg, 41%, 41%);
+  transition: color 0.2s ease-out;
+}
+.about article button:hover {
+  color: hsl(359deg, 58%, 45%);
 }
 
 .service-details {

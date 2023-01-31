@@ -236,6 +236,10 @@
 
 .about article button{
     color: vars.$azul-deep-nopac;
+    transition: color .2s ease-out;
+    &:hover{
+        color: vars.$rouge-full;
+    }
 }
 
 .service-details{
