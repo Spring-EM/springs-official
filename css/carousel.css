@@ -20,7 +20,7 @@
   justify-content: space-between;
   align-items: center;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 425px) {
   .testimonial__item-one {
     justify-content: space-around;
   }
@@ -30,7 +30,7 @@
   font-size: 18px;
   text-transform: capitalize;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 425px) {
   .testimonial__item-one p {
     inline-size: 300px;
     word-wrap: break-word;
@@ -60,7 +60,7 @@
   align-items: center;
   background-color: hsl(356deg, 50%, 95%);
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 425px) {
   .carousel-container .carousel-cell {
     width: 70%;
     height: 75%;
@@ -72,7 +72,7 @@
   position: relative;
   left: -50px;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 425px) {
   .carousel-container .carousel-cell blockquote {
     left: 0px;
   }
@@ -87,7 +87,7 @@
   position: relative;
   margin-bottom: 20px;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 425px) {
   .carousel-container .carousel-cell blockquote p {
     font-size: 10px;
     inline-size: 250px;
@@ -99,7 +99,7 @@
   font-size: 20px;
   font-weight: 600;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 425px) {
   .carousel-container .carousel-cell blockquote cite {
     font-size: 13px;
   }
@@ -110,7 +110,7 @@
   position: relative;
   left: -13rem;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 425px) {
   .carousel-container .carousel-cell img {
     width: 300px;
     left: -25%;

@@ -6,6 +6,12 @@
   place-items: center;
   position: relative;
 }
+@media only screen and (max-width: 425px) {
+  .index-hero {
+    z-index: 0;
+    margin-top: 50px;
+  }
+}
 
 .index-hero #blue-accent {
   width: 400px;
@@ -24,17 +30,32 @@
   align-items: baseline;
   position: relative;
 }
+@media only screen and (max-width: 425px) {
+  .index-hero article {
+    z-index: 0;
+  }
+}
 
 .index-hero article h1 {
   inline-size: 450px;
   word-wrap: break-word;
   text-transform: capitalize;
 }
+@media only screen and (max-width: 425px) {
+  .index-hero article h1 {
+    z-index: 0;
+  }
+}
 
 .index-hero article p {
   font-size: 1.5rem;
   inline-size: 400px;
   word-wrap: break-word;
+}
+@media only screen and (max-width: 425px) {
+  .index-hero article p {
+    z-index: 0;
+  }
 }
 
 .index-hero article button {
@@ -51,6 +72,17 @@
   position: relative;
   z-index: 1;
   cursor: pointer;
+  transition: background-color 0.3s ease-out, color 0.3s ease-out;
+}
+@media only screen and (max-width: 425px) {
+  .index-hero article button {
+    z-index: 0;
+  }
+}
+
+#cta:hover {
+  background-color: hsla(359deg, 58%, 45%, 0.2);
+  color: hsl(239deg, 41%, 41%);
 }
 
 .index-hero img {
@@ -60,6 +92,11 @@
   left: -80px;
   top: 50px;
   z-index: 2;
+}
+@media only screen and (max-width: 425px) {
+  .index-hero img {
+    z-index: 0;
+  }
 }
 
 .index-hero #heroImageCrop {
@@ -204,6 +241,10 @@
 
 .about article button {
   color: hsl(239deg, 41%, 41%);
+  transition: color 0.2s ease-out;
+}
+.about article button:hover {
+  color: hsl(359deg, 58%, 45%);
 }
 
 .service-details {
@@ -306,7 +347,7 @@
   padding: 25px;
   margin-bottom: 5px;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 425px) {
   .card__two-icons {
     margin-left: 10px;
   }
@@ -316,7 +357,7 @@
   font-size: 1.8rem;
   margin-bottom: 10px;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 425px) {
   .flex-child-two .card-two article h2 {
     margin-left: 20px;
   }
@@ -329,7 +370,7 @@
   word-wrap: break-word;
   transition: 0.2s ease-in;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 425px) {
   .flex-child-two .card-two article p {
     padding-left: 20px;
   }
@@ -449,7 +490,7 @@
   width: 100%;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
   #blue-accent {
     display: none;
   }

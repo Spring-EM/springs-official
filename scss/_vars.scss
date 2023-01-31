@@ -12,9 +12,12 @@ $shadow: 0px 3.43529px 17.1765px rgba(0, 0, 0, 0.1);
 $glass: hsla(0, 0%, 100%, 0.8);
 $line: 31px;
 $line-sm: 15px;
+$mobile-m-with: 4rem;
 
 
 //media queries
 
-$media-300-down: "only screen and (max-width: 300px)";
-$media-600-down: "only screen and (max-width: 600px)";
+$media-mobile-s: "only screen and (max-width: 320px)";
+$media-mobile-m: "only screen and (max-width: 375px)";
+$media-mobile-l: "only screen and (max-width: 425px)";
+$media-tab: "only screen and (max-width: 768px)";

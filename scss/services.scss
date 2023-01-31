@@ -7,7 +7,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    @media #{vars.$media-600-down} {
+    @media #{vars.$media-mobile-l} {
         flex-direction: column;
         height: 180vh;
     }
@@ -19,7 +19,7 @@
     justify-content: space-around;
     align-items: flex-start;
     height: 40%;
-    @media #{vars.$media-600-down}{
+    @media #{vars.$media-mobile-l}{
         height: 500px;
         align-items: center;
     }
@@ -30,7 +30,7 @@
     line-height: vars.$line-sm;
     inline-size: 300px;
     word-wrap: break-word;
-    @media #{vars.$media-600-down} {
+    @media #{vars.$media-mobile-l} {
         text-align: center;
         line-height: vars.$line;
     }
@@ -41,7 +41,7 @@
     width: 350px;
     height: 200px;
     justify-self: end;
-    @media #{vars.$media-600-down} {
+    @media #{vars.$media-mobile-l} {
         width:200px;
         height: 200px;
         justify-self: center;
@@ -53,7 +53,7 @@
     width: 250px;
     height: 200px;
     align-self: start;
-    @media #{vars.$media-600-down} {
+    @media #{vars.$media-mobile-l} {
         width: 200px;
         height: 200px;
         justify-self: center;
@@ -66,7 +66,7 @@
     height: 300px;
     align-self: start;
     justify-self: end;
-    @media #{vars.$media-600-down} {
+    @media #{vars.$media-mobile-l} {
         width: 200px;
         height: 200px;
         justify-self: center;
@@ -85,7 +85,7 @@
     grid-template-rows: repeat(2, 1fr);
     gap: 10px;
     /* background-color: blue; */
-    @media #{vars.$media-600-down} {
+    @media #{vars.$media-mobile-l} {
         width: 300px;
         height: 620px;
         grid-template-areas: "a"
@@ -108,7 +108,7 @@
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    @media #{vars.$media-600-down}{
+    @media #{vars.$media-mobile-l}{
         height: 200vh;
         padding-top: 50px;
     }
@@ -130,7 +130,7 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 10px;
-    @media #{vars.$media-600-down}{
+    @media #{vars.$media-mobile-l}{
         height: 800px;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6, 1fr);
@@ -145,7 +145,7 @@
     justify-self: center;
     align-self: center;
     border-radius: 10px;
-    @media #{vars.$media-600-down} {
+    @media #{vars.$media-mobile-l} {
         width: 300px;
         height: 80px;
     }
@@ -157,7 +157,7 @@
     border-radius: 10px;
     display: grid;
     place-items: center;
-    @media #{vars.$media-600-down} {
+    @media #{vars.$media-mobile-l} {
         width: 30px;
         height: 30px;
     }
@@ -165,7 +165,7 @@
 
 #services-body-content #services-list .services-list-item div img {
     width: 30px;
-    @media #{vars.$media-600-down} {
+    @media #{vars.$media-mobile-l} {
         width: 15px;
     }
 }
@@ -180,7 +180,7 @@
 #services-body-content #services-list .services-list-item p {
     font-size: 2.8rem;
     font-weight: 600;
-    @media #{vars.$media-600-down} {
+    @media #{vars.$media-mobile-l} {
         font-size: 1.2rem;
     }
 }
@@ -218,14 +218,14 @@
     flex-flow: column;
     justify-content: space-around;
     align-items: center;
-    @media #{vars.$media-600-down} {
+    @media #{vars.$media-mobile-l} {
         height: 100vh;
     }
 }
 
 #services-body-content #services-connect>p {
     font-size: 1.5rem;
-    @media #{vars.$media-600-down}{
+    @media #{vars.$media-mobile-l}{
         font-size:1.2rem;
         inline-size:250px;
         word-wrap: break-word;
@@ -238,7 +238,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    @media #{vars.$media-600-down} {
+    @media #{vars.$media-mobile-l} {
         width: 100%;
         height: 500px;
         flex-direction: column;
