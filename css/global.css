@@ -72,6 +72,11 @@ button {
 }
 .navigation .logo img {
   width: 80px;
+  transition: 0.3s ease-out;
+}
+.navigation .logo img:hover {
+  cursor: pointer;
+  transform: scale(0.8);
 }
 .navigation .hamburger {
   display: none;

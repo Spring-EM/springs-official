@@ -68,6 +68,11 @@ button{
         width: 100px;
         img{
             width: 80px;
+            transition: .3s ease-out;
+            &:hover{
+                cursor: pointer;
+                transform: scale(.8);
+            }
         }
     }
     .hamburger{
