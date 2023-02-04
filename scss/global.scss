@@ -73,6 +73,10 @@ button{
         @media #{vars.$media-mobile-l}{
             display: block;
         }
+        @media #{vars.$media-mobile-s}{
+            position: relative;
+            left: 80px;
+        }
         .line{
             @media #{vars.$media-mobile-l}{
                 width: 30px;

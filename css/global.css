@@ -81,6 +81,12 @@ button {
     display: block;
   }
 }
+@media only screen and (max-width: 320px) {
+  .navigation .hamburger {
+    position: relative;
+    left: 80px;
+  }
+}
 @media only screen and (max-width: 425px) {
   .navigation .hamburger .line {
     width: 30px;

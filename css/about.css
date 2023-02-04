@@ -36,6 +36,13 @@
     font-size: 2.4rem;
   }
 }
+@media only screen and (max-width: 320px) {
+  .about-hero > article h1 {
+    inline-size: 280px;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+  }
+}
 
 .about-hero article h1 {
   margin-top: 30px;
@@ -115,6 +122,11 @@
   font-weight: 600;
   text-transform: capitalize;
 }
+@media only screen and (max-width: 320px) {
+  #hero-grid .grid-figure_one figcaption p {
+    font-size: 1.2rem;
+  }
+}
 #hero-grid .grid-figure_four {
   grid-area: 1/2/2/3;
   justify-content: space-between;
@@ -146,6 +158,11 @@
   font-weight: 600;
   text-transform: capitalize;
 }
+@media only screen and (max-width: 320px) {
+  #hero-grid .grid-figure_four figcaption p {
+    font-size: 1.2rem;
+  }
+}
 #hero-grid .grid-figure_three {
   grid-area: 2/2/3/3;
   justify-content: space-between;
@@ -174,6 +191,12 @@
 #hero-grid .grid-figure_three figcaption p {
   font-size: 1.6rem;
   font-weight: 600;
+  text-transform: capitalize;
+}
+@media only screen and (max-width: 320px) {
+  #hero-grid .grid-figure_three figcaption p {
+    font-size: 1.2rem;
+  }
 }
 #hero-grid .grid-figure_two {
   grid-area: 3/2/4/3;
@@ -204,6 +227,11 @@
 #hero-grid .grid-figure_two figcaption p {
   font-size: 1.8rem;
   font-weight: 600;
+}
+@media only screen and (max-width: 320px) {
+  #hero-grid .grid-figure_two figcaption p {
+    font-size: 1.2rem;
+  }
 }
 
 #hero-grid .grid-figure_two .img-wrapper,
@@ -396,6 +424,12 @@
     line-height: 15px;
     inline-size: 300px;
     text-align: center;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .about-content article p {
+    font-size: 10px;
+    line-height: 22.5px;
   }
 }
 
