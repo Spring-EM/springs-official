@@ -52,7 +52,7 @@
 }
 @media only screen and (max-width: 425px) {
   .services-hero > .services-grid .sg-item-one {
-    width: 200px;
+    width: 300px;
     height: 200px;
     justify-self: center;
   }
@@ -70,7 +70,7 @@
 }
 @media only screen and (max-width: 425px) {
   .services-hero > .services-grid .sg-item-two {
-    width: 200px;
+    width: 300px;
     height: 200px;
     justify-self: center;
   }
@@ -89,7 +89,7 @@
 }
 @media only screen and (max-width: 425px) {
   .services-hero > .services-grid .sg-item-three {
-    width: 200px;
+    width: 300px;
     height: 200px;
     justify-self: center;
   }
