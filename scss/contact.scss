@@ -41,7 +41,7 @@
     line-height: vars.$line-sm;
 }
 
-.contact-header article #contact-phone {
+.contact-header article #contact-details {
     width: 150px;
     height: 30px;
     border: 2px solid black;
@@ -49,6 +49,14 @@
     padding: 5px;
     display: flex;
     place-items: center;
+    a{
+        color: #000;
+        margin-left: 10px;
+        font-size: 1.5px;
+    }
+    p{
+        margin-left: 10px;
+    }
 }
 
 .contact-header img {
