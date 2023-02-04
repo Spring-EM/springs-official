@@ -65,13 +65,13 @@ button {
   justify-content: space-between;
   align-items: center;
   padding: 0px 100px;
-  background-color: hsl(239deg, 41%, 41%);
+  background-color: #fff;
 }
 .navigation .logo {
   width: 100px;
 }
 .navigation .logo img {
-  width: 100px;
+  width: 80px;
 }
 .navigation .hamburger {
   display: none;
@@ -85,7 +85,7 @@ button {
   .navigation .hamburger .line {
     width: 30px;
     height: 3px;
-    background-color: #fff;
+    background-color: #000;
     margin: 6px 0px;
   }
 }
@@ -98,7 +98,7 @@ button {
   padding: 10px 25px;
   font-size: 18px;
   margin: 0px 5px;
-  color: #fff;
+  color: #000;
 }
 .nav-items ul li a:hover {
   color: hsl(359deg, 58%, 45%);
@@ -113,7 +113,7 @@ button {
     right: 0;
     transition: 0.2s;
     width: 100vw;
-    background-color: hsl(239deg, 41%, 41%);
+    background-color: #fff;
     overflow: hidden;
     z-index: 3;
   }
