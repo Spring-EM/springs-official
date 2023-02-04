@@ -98,13 +98,7 @@ button{
         font-size: 18px;
         margin: 0px 5px;
         color: #000;
-        &:hover{
-            color: vars.$rouge-full;
-        }
     }
-    // li a.active{
-    //     color: vars.$rouge-full;
-    // }
 }
 
 .nav-items{
@@ -135,6 +129,27 @@ button{
         @media #{vars.$media-mobile-l}{
             margin-bottom: 12px;
         }
+    }
+}
+
+.nav-items li a{
+    display: inline-block;
+	position: relative;
+    height: 50px;
+    &:after{    
+        content: "";
+        display: block;
+        position: aboslute;
+        width: 0;
+        bottom: 0;
+        height: 4px;
+        margin: -2px 0;
+        right: 0;
+        background-color: vars.$azul-deep-nopac;
+        transition: all 0.4s ease-in 0s;
+    }
+    &:hover:after{
+        width: 100%;
     }
 }
 

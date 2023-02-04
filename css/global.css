@@ -106,9 +106,6 @@ button {
   margin: 0px 5px;
   color: #000;
 }
-.nav-items ul li a:hover {
-  color: hsl(359deg, 58%, 45%);
-}
 
 @media only screen and (max-width: 425px) {
   .nav-items {
@@ -138,6 +135,27 @@ button {
   .nav-items li a {
     margin-bottom: 12px;
   }
+}
+
+.nav-items li a {
+  display: inline-block;
+  position: relative;
+  height: 50px;
+}
+.nav-items li a:after {
+  content: "";
+  display: block;
+  position: aboslute;
+  width: 0;
+  bottom: 0;
+  height: 4px;
+  margin: -2px 0;
+  right: 0;
+  background-color: hsl(239deg, 41%, 41%);
+  transition: all 0.4s ease-in 0s;
+}
+.nav-items li a:hover:after {
+  width: 100%;
 }
 
 @media only screen and (max-width: 425px) {
