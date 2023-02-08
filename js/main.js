@@ -6,3 +6,8 @@ hamburger.addEventListener("click", function() {
     navBar.classList.toggle("active")
     hamburger.classList.toggle("nav-clicked")
 })
+
+var btnCta = document.querySelector("#cta")
+btnCta.addEventListener("click", function() {
+    location.href("services.html")
+})
