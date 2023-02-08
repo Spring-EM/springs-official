@@ -75,7 +75,6 @@ tl.fromTo(".fade-in", {opacity: 0},{opacity: 1, duration: 1.})
   .from(".slide-in", {y: -500, delay: .3, duration: 1.5})
   .fromTo(".slide-in-on-scroll", {x: -1000}, {x: 0, duration: 2, scrollTrigger: {
     trigger: ".slide-in-on-scroll",
-    markers: true,
     start: "20px 80%" ,
     end: "bottom center",
     scrub: true,
@@ -97,14 +96,14 @@ tl.fromTo(".fade-in", {opacity: 0},{opacity: 1, duration: 1.})
     pin: "true",
     scrub: true,
   }})
-  .fromTo(".card-flyin-one", {x: -250}, {x: 0, duration: 1.5, scrollTrigger: {
+  .fromTo(".card-flyin-one", {x: 350}, {x: 0, duration: 1.5, scrollTrigger: {
     trigger: ".card-flyin-one",
     scrub:true
   }})
-  .fromTo(".card-flyin-two", {x: 250}, {x: 0, duration: 1.5, scrollTrigger: {
-    trigger: ".card-flyin-two",
-    scrub:true
-  }})
+//   .fromTo(".card-flyin-two", {x: -250}, {x: 0, duration: 1.5, scrollTrigger: {
+//     trigger: ".card-flyin-two",
+//     scrub:true
+//   }})
   
 
 
