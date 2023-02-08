@@ -9,5 +9,5 @@ hamburger.addEventListener("click", function() {
 
 var btnCta = document.querySelector("#cta")
 btnCta.addEventListener("click", function() {
-    location.href("services.html")
+    location.href("services.html`")
 })
