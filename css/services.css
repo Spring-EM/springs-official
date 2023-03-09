@@ -45,10 +45,14 @@
   width: 350px;
   height: 200px;
   justify-self: end;
+  background-image: url("../assets/new-images/7.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 @media only screen and (max-width: 425px) {
   .services-hero > .services-grid .sg-item-one {
-    width: 200px;
+    width: 300px;
     height: 200px;
     justify-self: center;
   }
@@ -59,10 +63,14 @@
   width: 250px;
   height: 200px;
   align-self: start;
+  background-image: url("../assets/new-images/8.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 @media only screen and (max-width: 425px) {
   .services-hero > .services-grid .sg-item-two {
-    width: 200px;
+    width: 300px;
     height: 200px;
     justify-self: center;
   }
@@ -74,10 +82,14 @@
   height: 300px;
   align-self: start;
   justify-self: end;
+  background-image: url("../assets/new-images/9.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 @media only screen and (max-width: 425px) {
   .services-hero > .services-grid .sg-item-three {
-    width: 200px;
+    width: 300px;
     height: 200px;
     justify-self: center;
   }

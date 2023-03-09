@@ -32,6 +32,11 @@
     @media #{vars.$media-mobile-l}{
         font-size: 2.4rem;
     }
+    @media #{vars.$media-mobile-s}{
+        inline-size: 280px;
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+    }
 }
 
 .about-hero article h1 {
@@ -99,7 +104,10 @@
                 inline-size: 130px;
                 word-wrap: break-word;
                 font-weight: 600;
-                text-transform: capitalize;                
+                text-transform: capitalize;
+                @media #{vars.$media-mobile-s}{
+                    font-size: 1.2rem;
+                }             
             }
         }
     }
@@ -128,6 +136,9 @@
                 font-size: 1.4rem;
                 font-weight: 600;
                 text-transform: capitalize;
+                @media #{vars.$media-mobile-s}{
+                    font-size: 1.2rem;
+                }
             }
         }
     }
@@ -155,6 +166,10 @@
             p{
                 font-size: 1.6rem;
                 font-weight: 600;
+                text-transform: capitalize;
+                @media #{vars.$media-mobile-s}{
+                    font-size: 1.2rem;
+                }
             }
         }
     }
@@ -182,6 +197,9 @@
             p{
                 font-size: 1.8rem;
                 font-weight: 600;
+                @media #{vars.$media-mobile-s}{
+                    font-size: 1.2rem;
+                }
             }
         }
     }
@@ -361,6 +379,10 @@
         line-height: vars.$line-sm;
         inline-size: 300px;
         text-align: center;
+    }
+    @media #{vars.$media-mobile-s}{
+        font-size: 10px;
+        line-height: vars.$line-sm * 1.5;
     }
 }
 

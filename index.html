@@ -6,7 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Springs | Home</title>
-    <link rel="icon" href="/assets/images/springs-logo.png">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/carousel.css">
@@ -16,8 +20,9 @@
     <!-- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"> -->
     <script src="https://kit.fontawesome.com/dc9d65de73.js" crossorigin="anonymous"></script>
     <script src="./js/gsap/scrollTrigger.min.js" defer></script>
+    <script src="./js/gsap/gsap.min.js" defer></script>
     <script src="./js/script.js" defer></script>
-    <script src="./js/scroll.js" defer></script>
+    <script src="./js/home.js" defer></script>
     <script src="./js/animate.js" defer></script>
     <script src="./js/main.js" defer></script>
     <script src="./js/carousel.js" defer></script>
@@ -26,12 +31,12 @@
 <body>
    <nav class="navigation">
     <div class="logo">
-        <img src="./assets/images/springs-logo.png" alt="springs logo">
+        <img src="./assets/new-images/logo.svg" alt="springs logo">
     </div>
     <div class="hamburger">
-        <div class="line bun"></div>
+        <div class="line top-bun"></div>
         <div class="line meat"></div>
-        <div class="line bun"></div>
+        <div class="line bottom-bun"></div>
     </div>
     <div class="nav-items">
         <ul class="nav-item-list">
@@ -43,20 +48,22 @@
     </div>
    </nav>
 
+   <main class="page-wrapper">
+
     <header class="index-hero" id="index-hero">
         <div id="blue-accent"></div>
-        <article>
-            <h1>
+        <article >
+            <h1 class="slide-in">
                 Let's create a memorable and
                 innovative customer experience
                 between your customers and
                 your brand.
             </h1>
-            <p>
+            <p class="fade-in">
                 Springs help customers achieve a deep emotional
                 connections between clients and brands.
             </p>
-            <button id="cta">
+            <button class="fade-in" id="cta">
                 learn more
                 <i class="fa-solid fa-arrow-right-long fa-rotate-by fa-beat"
                     style="--fa-rotate-angle: -55deg; margin-left: 10px;  --fa-bounce-start-scale-x: 1; --fa-bounce-start-scale-y: 1; --fa-bounce-jump-scale-x: 1; --fa-bounce-jump-scale-y: 1; --fa-bounce-land-scale-x: 1; --fa-bounce-land-scale-y: 1; "></i>
@@ -66,7 +73,7 @@
             <div class="frosted-glass frosted-glass-one"></div>
             <div class="frosted-glass frosted-glass-two"></div>
         </div>
-        <img class="index-hero-image" src="./assets/images/african-smiling-lady.webp" alt="A woman smiling" />
+        <img class="index-hero-image fade-in" src="./assets/images/african-smiling-lady.webp" alt="A woman smiling" />
         <svg width="0" height="0" preserveAspectRatio="none">
             <defs>
                 <clipPath id="indexHeroImageClip">
@@ -77,7 +84,7 @@
 
         <div class="index-hero-image-accent"></div>
     </header>
-    <section class="achievements" id="section-counter">
+    <section class="achievements fade-in-trigg" id="section-counter">
         <ul>
 
             <li class="counter-item">
@@ -106,8 +113,8 @@
 
         </ul>
     </section>
-    <section class="about">
-        <img class="about-img" src="/assets/images/team-work.webp" alt="" >
+    <section class="about ">
+        <img class="about-img slide-in-on-scroll" src="/assets/images/team-work.webp" alt="" >
         <svg width="0" height="0" preserveAspectRatio=none>
             <defs>
                 <clipPath id="aboutImgClip">
@@ -116,7 +123,7 @@
             </defs>
         </svg>
         
-        <article>
+        <article class="fade-in-trigg">
             <div class="pill"> About springs-em</div>
             <h2>Your trusted partner</h2>
             <p>We are an experiential marketing & promotions company with a clear focus on growing brand volumes through
@@ -146,7 +153,7 @@
                 </ul>
             </article>
         </article>
-        <article class="flex-child-two">
+        <article class="flex-child-two scale-on-scroll">
             <article class="card-two" data-content="">
                 <article class="">
                     <span class="card__two-icons">
@@ -265,7 +272,7 @@
         </article>
     </section>
     <section class="why-choose">
-        <article class="card-no-azul">
+        <article class="card-no-azul card-flyin-one">
             <div class="pill">why choose us</div>
             <h2>Reasons why Springs Events &amp; Marketing is the best.</h2>
             <p>This contains our strength and essence. Things that make us different from others</p>
@@ -287,7 +294,7 @@
 
             </dl>
         </article>
-        <article class="card-azul">
+        <article class="card-azul card-flyin-two">
             <dl>
                 <dt>
                     <p class="colored">our strengths</p>
@@ -438,8 +445,9 @@
             </li>
         </ul>
     </nav>
+    </main>
     <footer class="footer" id="footer">
-        <img src="./assets/images/springs-logo.png" alt="">
+        <img src="./assets/new-images/logo.svg" alt="">
         <nav class="footer-nav">
             <dl>
                 <dt>Services</dt>
